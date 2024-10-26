@@ -1,0 +1,12 @@
+{
+  "promptDelete": false,
+  "alwaysUpdateLinks": false,
+  "trashOption": "system",
+  "defaultViewMode": "source",
+  "strictLineBreaks": true,
+  "showRibbon": true,
+  "useTab": true,
+  "vimMode": true,
+  "readableLineLength": false,
+  "spellcheck": false
+}

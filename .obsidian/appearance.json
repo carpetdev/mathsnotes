@@ -1,0 +1,10 @@
+{
+  "theme": "system",
+  "enabledCssSnippets": [
+    "S - Embed Adjustments",
+    "tikzcd",
+    "vim"
+  ],
+  "accentColor": "#f55ce8",
+  "nativeMenus": false
+}
