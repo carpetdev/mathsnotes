@@ -13,13 +13,23 @@ Have the form
 $$
 \dot{p_i} = -\frac{ \partial H }{ \partial q_i } ,\ \dot{q_i} = \frac{ \partial H }{ \partial p_i }
 $$
+
+^8fdc36
+
 where $i=1,\dots,n$ and $H=H(p,q)$ is called the **Hamiltonian** of the system.
 
 The evolution of a function $F(p,q)$ is given by
 $$
 \dot{F}=\sum_{i=1}^n \left( \frac{ \partial F }{ \partial p_i } \dot{p_i} + \frac{ \partial F }{ \partial q_i } \dot{q_i} \right) = \sum_{i=1}^{n} \left( -\frac{ \partial F }{ \partial p_i } \frac{ \partial H }{ \partial q_i } +\frac{ \partial F }{ \partial q_i } \frac{ \partial H }{ \partial p_i }  \right)
 $$
+
+^84769a
+
 Define the **Poisson bracket** of two functions $F$ and $G$ on the phase space $R^{2n}$ as
 $$
 \{ F,G \}\coloneqq\sum_{i=1}^{n} \left( -\frac{ \partial F }{ \partial p_i } \frac{ \partial G }{ \partial q_i } +\frac{ \partial F }{ \partial q_i } \frac{ \partial G }{ \partial p_i }  \right)
+$$
+The evolution [[#^84769a]] (and hence [[#^8fdc36]] by setting e.g. $F=p$) can then be written as
+$$
+\dot{F}=\{ H,F \}
 $$
