@@ -42,5 +42,14 @@
     }
   ],
   "workspace:close-window": [],
-  "editor:delete-paragraph": []
+  "editor:delete-paragraph": [],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ]
 }

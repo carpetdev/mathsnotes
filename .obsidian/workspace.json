@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "09d2f7df63bd19c2",
+            "id": "fe1c84454887bbcf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Integrable Systems/Lecture 1.md",
+                "file": "Commutative Algebra/Lecture 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "proof",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 283.5,
+    "collapsed": true
   },
   "right": {
     "id": "9a72ad0d5a4f320c",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Integrable Systems/Lecture 1.md",
+                "file": "Commutative Algebra/Lecture 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Integrable Systems/Lecture 1.md",
+                "file": "Commutative Algebra/Lecture 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Integrable Systems/Lecture 1.md"
+                "file": "Commutative Algebra/Lecture 1.md"
               }
             }
           }
@@ -145,23 +146,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "09d2f7df63bd19c2",
+  "active": "fe1c84454887bbcf",
   "lastOpenFiles": [
-    "mathsnotes",
+    "_obsidian/snippets.md",
+    "Commutative Algebra/Lecture 1.md",
+    "Untitled.md",
+    "Real and Complex Reflection Groups/Lecture 1.md",
+    "[0.md",
+    "_obsidian/preamble.md",
     "Algebras and Representations/Week 1 - Algebras.md",
+    "Commutative Algebra",
     "Integrable Systems/Lecture 1.md",
-    "reload.md",
     "Category Theory/Lecture 1.md",
+    "Notation.md",
+    "Real and Complex Reflection Groups",
+    "mathsnotes",
+    "reload.md",
     "Integrable Systems",
     "Module.md",
     "Field.md",
     "Ring.md",
-    "_obsidian/preamble.md",
     "_obsidian/templates/tikzcd.md",
     "_obsidian/templates",
     "_obsidian",
     "Pasted image 20241024211444.png",
-    "Notation.md",
     "preamble.sty",
     "New Text Document.txt",
     "Category Theory",
@@ -171,7 +179,6 @@
     "^613727.md",
     "Definitions.md",
     "Untitled.canvas",
-    "Definitions",
     "$K$.md",
     "Untitled 1.md",
     "2024-10-08.md",

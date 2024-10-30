@@ -1,16 +1,17 @@
+
 Definition:
 A **category** $\mathbb{C}$ consists of
-1. A class $\Ob{\mathbb{C}}$
-2. For every $X,Y \in \Ob{\mathbb{C}}$, a class $\mathbb{C}(X,Y)$
-3. For every $X, Y, Z \in \Ob{C}$, a function $\mathbb{C}(Y,Z) \times \mathbb{C}(X,Y) \overset{\cdot}{\longrightarrow} \mathbb{C}(X,Z)$
-4. For every $X\in\Ob{\mathbb{C}}$, an element $1_X \in \mathbb{C}(X,X)$
+1. A class $\Ob(\mathbb{C})$
+2. For every ${} X,Y \in \Ob(\mathbb{C)} {}$, a class $\mathbb{C}(X,Y)$
+3. For every ${} X, Y, Z \in \Ob(C) {}$, a function $\mathbb{C}(Y,Z) \times \mathbb{C}(X,Y) \overset{\cdot}{\longrightarrow} \mathbb{C}(X,Z)$
+4. For every ${} X\in\Ob(\mathbb{C)} {}$, an element $1_X \in \mathbb{C}(X,X)$
 
 such that
 1. (associativity) $\forall f \in \mathbb{C}(X,Y),\ g \in(Y, Z),\ h\in \mathbb{C}(Z,W),\ h\cdot(g\cdot f)=(h\cdot g)\cdot f \tag{s}$
 2. (unitality) $\forall f\in \mathbb{C}(X,Y), f\cdot1_X=f,\ 1_X\cdot f=f$
 
 Notation:
-- $X\in\Ob{\mathbb{C}}$ is an **object** of $\mathbb{C}$
+- ${} X\in\Ob(\mathbb{C)} {}$ is an **object** of $\mathbb{C}$
 - $f \in \mathbb{C}(X,Y)$ is a **morphism** (or map, or arrow) from $X$ to $Y$, written $f:X\to Y$
 - $g\cdot f$ is the **composite** of $f$ and $g$
 ```tikz
@@ -32,17 +33,17 @@ Examples (category, objects, morphisms):
 - $\cat{Mod}_R$, $R$-modules, $R$-module homomorphisms
 
 Definition: A category $\mathbb{C}$ is
-- **locally small** if for every $X,Y\in \Ob{C},\ \mathbb{C}(X,Y)$ is a set
-- **small** if locally small and $\Ob{\mathbb{C}}$ is a set
+- **locally small** if for every ${} X,Y\in \Ob(C),\ \mathbb{C}(X,Y) {}$ is a set
+- **small** if locally small and ${} \Ob(\mathbb{C)} {}$ is a set
 ## Monoids as categories
 Let $(M,\ \cdot,\ 1)$ be a monoid (group without inverses). We define a category $\cat{M}$ as follows
-- $\Ob{\cat{M}}=\{ * \}$
+- ${} \Ob(\cat{M)}=\{ * \} {}$
 - $\cat{M}(*,*)=M$
 - Composition is given by the monoid operation $\cdot$
 - The identity on $*$ is given by the monoid identity
 ## Posets as categories
 Let $(P,\ \leq)$ be a poset. We define a category $\cat{P}$ as follows
-- $\Ob{\cat{P}}=P$
+- ${} \Ob(\cat{P)}=P {}$
 - For $x, y\in P$, $${} \cat{P}(x,y)=\begin{cases}
 \{ * \},  & \text{if }x\leq y\\ \\
 \varnothing, & \text{otherwise}
