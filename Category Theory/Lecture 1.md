@@ -1,8 +1,7 @@
-
 Definition:
 A **category** $\mathbb{C}$ consists of
 1. A class $\Ob(\mathbb{C})$
-2. For every ${} X,Y \in \Ob(\mathbb{C)} {}$, a class $\mathbb{C}(X,Y)$
+2. For every $X,Y \in \Ob(\mathbb{C)}$, a class $\mathbb{C}(X,Y)$
 3. For every ${} X, Y, Z \in \Ob(C) {}$, a function $\mathbb{C}(Y,Z) \times \mathbb{C}(X,Y) \overset{\cdot}{\longrightarrow} \mathbb{C}(X,Z)$
 4. For every ${} X\in\Ob(\mathbb{C)} {}$, an element $1_X \in \mathbb{C}(X,X)$
 
@@ -34,7 +33,7 @@ Examples (category, objects, morphisms):
 
 Definition: A category $\mathbb{C}$ is
 - **locally small** if for every ${} X,Y\in \Ob(C),\ \mathbb{C}(X,Y) {}$ is a set
-- **small** if locally small and ${} \Ob(\mathbb{C)} {}$ is a set
+- **small** if locally small and $\Ob(\mathbb{C)}$ is a set
 ## Monoids as categories
 Let $(M,\ \cdot,\ 1)$ be a monoid (group without inverses). We define a category $\cat{M}$ as follows
 - ${} \Ob(\cat{M)}=\{ * \} {}$
@@ -48,7 +47,7 @@ Let $(P,\ \leq)$ be a poset. We define a category $\cat{P}$ as follows
 \{ * \},  & \text{if }x\leq y\\ \\
 \varnothing, & \text{otherwise}
 \end{cases} {}$$
-- For $x \in P,\ 1_x = x \in \cat{P}(x,x)$
+- For $x \in P,\ 1_x = * \in \cat{P}(x,x)$
 ## Basic notions
 Fix a category $\mathbb{C}$.
 

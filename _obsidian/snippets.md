@@ -46,6 +46,7 @@
 	{trigger: "@O", replacement: "\\Omega", options: "mA"},
 	{trigger: "ome", replacement: "\\omega", options: "mA"},
 	{trigger: "Ome", replacement: "\\Omega", options: "mA"},
+	{trigger: "xi", replacement: "xi", options: "mA"},
 
     // Text environment
     {trigger: "text", replacement: "\\text{$0}$1", options: "mA"},
@@ -61,7 +62,7 @@
 	{trigger: "//", replacement: "\\frac{$0}{$1}$2", options: "mA"},
 	{trigger: "ee", replacement: "e^{ $0 }$1", options: "mA"},
     {trigger: "invs", replacement: "^{-1}", options: "mA"},
-    // {trigger: /([A-Za-z])(\d)/, replacement: "[[0]]_{[[1]]}", options: "rmA", description: "Auto letter subscript", priority: -1},
+    {trigger: /([A-Za-z])(\d)/, replacement: "[[0]]_[[1]]", options: "rmA", description: "Auto letter subscript", priority: -1},
 
     {trigger: /([^\\])(exp|log|ln)/, replacement: "[[0]]\\[[1]]", options: "rmA"},
     {trigger: "conj", replacement: "^{*}", options: "mA"},
@@ -79,7 +80,8 @@
     {trigger: "([a-zA-Z])bar", replacement: "\\bar{[[0]]}", options: "rmA"},
 	{trigger: "([a-zA-Z])dot", replacement: "\\dot{[[0]]}", options: "rmA", priority: -1},
 	{trigger: "([a-zA-Z])ddot", replacement: "\\ddot{[[0]]}", options: "rmA", priority: 1},
-	{trigger: "([a-zA-Z])tilde", replacement: "\\tilde{[[0]]}", options: "rmA"},
+	{trigger: "([a-z])tilde", replacement: "\\tilde{[[0]]}", options: "rmA"},
+	{trigger: "([A-Z])tilde", replacement: "\\widetilde{[[0]]}", options: "rmA"},
 	{trigger: "([a-zA-Z])und", replacement: "\\underline{[[0]]}", options: "rmA"},
 	{trigger: "([a-zA-Z])vec", replacement: "\\vec{[[0]]}", options: "rmA"},
     {trigger: "([a-zA-Z]),\\.", replacement: "\\mathbf{[[0]]}", options: "rmA"},
@@ -93,6 +95,7 @@
 	{trigger: "ddot", replacement: "\\ddot{$0}$1", options: "mA"},
 	{trigger: "cdot", replacement: "\\cdot", options: "mA"},
 	{trigger: "tilde", replacement: "\\tilde{$0}$1", options: "mA"},
+	{trigger: "wtilde", replacement: "\\widetilde{$0}$1", options: "mA"},
 	{trigger: "und", replacement: "\\underline{$0}$1", options: "mA"},
 	{trigger: "vec", replacement: "\\vec{$0}$1", options: "mA"},
 
@@ -102,13 +105,13 @@
 	{trigger: /\\vec{([A-Za-z])}(\d)/, replacement: "\\vec{[[0]]}_{[[1]]}", options: "rmA"},
 	{trigger: /\\mathbf{([A-Za-z])}(\d)/, replacement: "\\mathbf{[[0]]}_{[[1]]}", options: "rmA"},
 
-    {trigger: "xnn", replacement: "x_{n}", options: "mA"},
-	{trigger: "xii", replacement: "x_{i}", options: "mA"},
-	{trigger: "xjj", replacement: "x_{j}", options: "mA"},
+    {trigger: "xnn", replacement: "x_n", options: "mA"},
+	{trigger: "xii", replacement: "x_i", options: "mA"},
+	{trigger: "xjj", replacement: "x_j", options: "mA"},
 	{trigger: "xp1", replacement: "x_{n+1}", options: "mA"},
-	{trigger: "ynn", replacement: "y_{n}", options: "mA"},
-	{trigger: "yii", replacement: "y_{i}", options: "mA"},
-	{trigger: "yjj", replacement: "y_{j}", options: "mA"},
+	{trigger: "ynn", replacement: "y_n", options: "mA"},
+	{trigger: "yii", replacement: "y_i", options: "mA"},
+	{trigger: "yjj", replacement: "y_j", options: "mA"},
 
     // Symbols
     {trigger: "ooo", replacement: "\\infty", options: "mA"},
@@ -160,6 +163,8 @@
 	{trigger: "RR", replacement: "\\mathbb{R}", options: "mA"},
 	{trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
 	{trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},
+	{trigger: "QQ", replacement: "\\mathbb{Q}", options: "mA"},
+	{trigger: "BB", replacement: "\\mathcal{B}", options: "mA"},
 
     // Handle spaces and backslashes
 

@@ -5,7 +5,7 @@ $\End_K(V)$ is the ring of endomorphisms from $V$ to $V$. We have $\GL(V) \subse
 
 Pick a basis for $V$ and assume that $\dim V=n$. Then $\End_K(V) \cong M_{n\times n}(K)$ and $\GL(V) \cong \GL_n(K)$.
 
-$\bar{\phantom{x}} : \mathbb{C} \to \mathbb{C}$ will be complex conjugation, $\overline{a+ib} = a-ib$. Then we regard $\mathbb{R}$ as a subfield of $\mathbb{C}$ by $\mathbb{R} = \{ \lambda \in \mathbb{C}: \bar{\lambda} = \lambda \}$.
+$\bar{\phantom{x}} : \mathbb{C} \to \mathbb{C}$ will be complex conjugation, $\overline{a+ib} = a-ib$. Then we regard $\mathbb{R}$ as a subfield of $\mathbb{C}$ by ${} \mathbb{R} = \{ \lambda \in \mathbb{C} \mid \bar{\lambda} = \lambda \} {}$.
 
 A Hermitian form on $V$ is a map $(\ ,\ ) : V\times V\to \mathbb{C}$ which, for all $w, v, u \in V,\ \lambda \in \mathbb{C}$, satisfies
 1. $(u+w,v) = (u,v) + (w,v)$
