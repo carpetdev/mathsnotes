@@ -6,3 +6,5 @@
 \DeclareMathOperator{\char}{char}
 \DeclareMathOperator{\Nil}{Nil}
 \newcommand{\nlhd}{\mathrel{\rlap{\lneq}\raise.22ex{\lhd}}}
+\newcommand{\cont}{\unicode{x21AF}}
+\newcommand{\unsim}{\mathord{\sim}}

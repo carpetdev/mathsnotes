@@ -60,5 +60,25 @@
       ],
       "key": "B"
     }
+  ],
+  "editor:open-link-in-new-leaf": [],
+  "editor:toggle-checklist-status": [],
+  "editor:focus-left": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "H"
+    }
+  ],
+  "editor:focus-right": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "L"
+    }
   ]
 }

@@ -2,9 +2,11 @@
   "obsidian-latex",
   "math-booster",
   "mathlinks",
-  "inline-math",
   "obsidian-tikzjax",
   "obsidian-latex-suite",
+  "obsidian-git",
   "tabout",
-  "obsidian-git"
+  "obsidian-editor-shortcuts",
+  "pdf-plus",
+  "inline-math"
 ]

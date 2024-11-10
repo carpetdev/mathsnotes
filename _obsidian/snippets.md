@@ -10,6 +10,7 @@
     {trigger: "sub!=", replacement: "\\subsetneq", options: "mA"},
     {trigger: "!sub=", replacement: "\\nsubseteq", options: "mA"},
     {trigger: "\\bs", replacement: "${} \\blacksquare$", options: "t"},
+    {trigger: "homeom", replacement: "homeomorphism", options: "tA"},
 
     // Math mode
 	{trigger: "mk", replacement: "$$0$", options: "tA"},
@@ -53,12 +54,12 @@
     {trigger: "\"", replacement: "\\text{$0}$1", options: "mA"},
 
     // Basic operations
-    {trigger: "sr", replacement: "^{2}", options: "mA"},
-	{trigger: "cb", replacement: "^{3}", options: "mA"},
+    {trigger: "sr", replacement: "^2", options: "mA"},
+	{trigger: "cb", replacement: "^3", options: "mA"},
 	{trigger: "rd", replacement: "^{$0}$1", options: "mA"},
 	// {trigger: "_", replacement: "_{$0}$1", options: "mA"},
 	{trigger: "sts", replacement: "_\\text{$0}", options: "mA"},
-	{trigger: "sq", replacement: "\\sqrt{ $0 }$1", options: "mA"},
+	{trigger: "sq", replacement: "\\sqrt{$0}$1", options: "mA"},
 	{trigger: "//", replacement: "\\frac{$0}{$1}$2", options: "mA"},
 	{trigger: "ee", replacement: "e^{ $0 }$1", options: "mA"},
     {trigger: "invs", replacement: "^{-1}", options: "mA"},
@@ -146,14 +147,17 @@
     {trigger: "=>", replacement: "\\implies", options: "mA"},
 	{trigger: "=<", replacement: "\\impliedby", options: "mA"},
 
-	{trigger: "and", replacement: "\\cap", options: "mA"},
-	{trigger: "orr", replacement: "\\cup", options: "mA"},
-	{trigger: "inn", replacement: "\\in", options: "mA"},
-	{trigger: "notin", replacement: "\\not\\in", options: "mA"},
+	{trigger: "bcup", replacement: "\\bigcup", options: "mA"},
+	{trigger: "bcap", replacement: "\\bigcap", options: "mA"},
+	{trigger: "cap", replacement: "\\cap", options: "mA"},
+	{trigger: "cup", replacement: "\\cup", options: "mA"},
+	{trigger: "ini", replacement: "\\in", options: "mA"},
+	{trigger: "notin", replacement: "\\notin", options: "mA"},
     {trigger: "\\\\\\", replacement: "\\setminus", options: "mA"},
+    {trigger: "\\", replacement: "\\setminus", options: ""},
     {trigger: "sub=", replacement: "\\subseteq", options: "mA"},
     {trigger: "sup=", replacement: "\\supseteq", options: "mA"},
-	{trigger: "eset", replacement: "\\emptyset", options: "mA"},
+	{trigger: "eset", replacement: "\\varnothing", options: "mA"},
 	{trigger: "set", replacement: "\\{$0\\}$1", options: "mA"},
 	{trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
 
@@ -177,8 +181,8 @@
 
     // Insert space after Greek letters and symbols
 	{trigger: "\\\\(${GREEK}|${SYMBOL}|${MORE_SYMBOLS})([A-Za-z])", replacement: "\\[[0]] [[1]]", options: "rmA"},
-	{trigger: "\\\\(${GREEK}|${SYMBOL}) sr", replacement: "\\[[0]]^{2}", options: "rmA"},
-	{trigger: "\\\\(${GREEK}|${SYMBOL}) cb", replacement: "\\[[0]]^{3}", options: "rmA"},
+	{trigger: "\\\\(${GREEK}|${SYMBOL}) sr", replacement: "\\[[0]]^2", options: "rmA"},
+	{trigger: "\\\\(${GREEK}|${SYMBOL}) cb", replacement: "\\[[0]]^3", options: "rmA"},
 	{trigger: "\\\\(${GREEK}|${SYMBOL}) rd", replacement: "\\[[0]]^{$0}$1", options: "rmA"},
 	{trigger: "\\\\(${GREEK}|${SYMBOL}) hat", replacement: "\\hat{\\[[0]]}", options: "rmA"},
 	{trigger: "\\\\(${GREEK}|${SYMBOL}) dot", replacement: "\\dot{\\[[0]]}", options: "rmA"},
@@ -189,8 +193,8 @@
 
 
     // Derivatives and integrals
-    {trigger: "par", replacement: "\\frac{ \\partial ${0:y} }{ \\partial ${1:x} } $2", options: "m"},
-    {trigger: /pa([A-Za-z])([A-Za-z])/, replacement: "\\frac{ \\partial [[0]] }{ \\partial [[1]] } ", options: "rm"},
+    {trigger: "par", replacement: "\\frac{\\partial ${0:y}}{\\partial ${1:x}} $2", options: "m"},
+    {trigger: /pa([A-Za-z])([A-Za-z])/, replacement: "\\frac{\\partial [[0]]}{\\partial [[1]]} ", options: "rm"},
     {trigger: "ddt", replacement: "\\frac{d}{dt} ", options: "mA"},
 
     {trigger: /([^\\])int/, replacement: "[[0]]\\int", options: "mA", priority: -1},
@@ -276,8 +280,8 @@
 	{trigger: "[", replacement: "[${VISUAL}]", options: "mA"},
 	{trigger: "{", replacement: "{${VISUAL}}", options: "mA"},
 	{trigger: "(", replacement: "($0)", options: "mA"},
-	{trigger: "{", replacement: "{$0}$1", options: "mA"},
-	{trigger: "[", replacement: "[$0]$1", options: "mA"},
+	{trigger: "{", replacement: "{$0}", options: "mA"},
+	{trigger: "[", replacement: "[$0]", options: "mA"},
 	{trigger: "lr(", replacement: "\\left( $0 \\right) $1", options: "mA"},
 	{trigger: "lr{", replacement: "\\left\\{ $0 \\right\\} $1", options: "mA"},
 	{trigger: "lr[", replacement: "\\left[ $0 \\right] $1", options: "mA"},

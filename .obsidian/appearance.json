@@ -3,7 +3,8 @@
   "enabledCssSnippets": [
     "S - Embed Adjustments",
     "tikzcd",
-    "vim"
+    "vim",
+    "pdf"
   ],
   "accentColor": "#f55ce8",
   "nativeMenus": false

@@ -1,0 +1,7 @@
+Not all connected spaces are path connected. E.g. $X=\left\{ \left( x,\sin\left( \frac{1}{x} \right) \right) \mid x>0 \right\} \cup \{(x,0)\mid x\leq 0\}$ with the relative topology from $\mathbb{R}^2$.
+
+Given an equivalence relation on a topological space $X$, the quotient set $X/\unsim$ inherits a natural topology called the **quotient topology**: A subset $U\subseteq X/\sim$ is defined to be open if $\pi ^{-1}(U)\subseteq X$ is open in $X$, where $\pi:X\to X/\sim$ is the projection map given by $\pi(x) = [x]$. Notice that $\pi$ is continuous by definition when $X/\sim$ is equipped with the quotient topology. Exercise: Check this defines a topology.
+
+Example:
+1. $X = \mathbb{R}$, $x\sim y$ if $x-y\in \mathbb{Z}$. $X/\sim$ is homeomorphic to $S^1 = \{(x_1,x_2)\in \mathbb{R}^2 \mid x_1^2+x_2^2=1\}$. For instance, the map $f:X/\sim\:\to S^1,\ [x]\mapsto(\cos 2\pi x, \sin 2\pi x)$ is a homeomorphism. Exercise: Check.
+2. The quotient topology might not preserve the Hausdorff property. E.g. $X = \mathbb{R}$, $x\sim y$ if there exists $n\in \mathbb{Z}$ such that $x=2^ny$. For any $\varepsilon>0$ and any $x\neq 0$, the interval $(-\varepsilon,\varepsilon)$ contains $2^nx$ for some very large and negative $n$. So the only open set containing $[0]$ is $X/\ c$id mk
