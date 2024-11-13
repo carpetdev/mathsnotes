@@ -22,8 +22,8 @@ The condition in [[#^b4fb14]] says that the scalars commute with everything. For
 
 >[!exm]
 >The ring of $n\times n$ matrices over a field $K$ (see [[#^2602ea]]) form a $K$-algebra. It has dimension $n^2$. Let us consider the **matrix units** $E_{ij}$ for $1\leq i,j\leq n$. The matrix $E_{ij}=(e_{kl}^{ij})_{1\leq k,l\leq n}$ is such that $$e_{kl}^{ij}=\begin{cases}
-1, & \text{if $k=i$ and $l=j$}\\
-0, & \text{otherwise.}
+1 & \text{if $k=i$ and $l=j$}\\
+0 & \text{otherwise}
 \end{cases}$$
 The matrix units form a basis for $M_{n}(K)$.
 
@@ -31,7 +31,7 @@ The matrix units form a basis for $M_{n}(K)$.
 >Polynomial rings $K[X]$ and $K[X,Y]$ are commutative infinite-dimensional $K$-algebras.
 
 >[!exm]
->Let $V$ be a $K$-vector space and consider the $K$-linear maps on $V$ $$End_{K}(V)=\{ \alpha : V \to V \mid \text{$\alpha$ is $K$-linear} \}$$
+>Let $V$ be a $K$-vector space and consider the $K$-linear maps on $V$ $$End_{K}(V)=\{ \alpha \colon V \to V \mid \text{$\alpha$ is $K$-linear} \}$$
 >This is a $K$-algebra taking the composition of maps as multiplication, and addition and scalar multiplication defined pointwise, i.e. $$(\alpha+\beta)(v)=\alpha(v)+\beta(v) \text{ and } (\lambda\alpha)(v)=\lambda(\alpha(v))$$ for $\alpha,\beta \in \text{End}_{K}(V),\ \lambda \in K \text{, and } v \in V.$
 
 Since a $K$-algebra $A$ is a $K$-vector space, it is often convenient to fix a basis, say $\{ b_{1}, b_{2}, \dots \}$. Then, it is sufficient to know the products $$b_{r}b_{s}\quad (r, s \geq1)$$

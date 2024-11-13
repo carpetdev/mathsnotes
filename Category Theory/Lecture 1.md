@@ -11,7 +11,7 @@ such that
 
 Notation:
 - ${} X\in\Ob(\mathbb{C)} {}$ is an **object** of $\mathbb{C}$
-- $f \in \mathbb{C}(X,Y)$ is a **morphism** (or map, or arrow) from $X$ to $Y$, written $f:X\to Y$
+- $f \in \mathbb{C}(X,Y)$ is a **morphism** (or map, or arrow) from $X$ to $Y$, written ${} f\colon X\to Y {}$
 - $g\cdot f$ is the **composite** of $f$ and $g$
 ```tikz
 \usepackage{tikz-cd}\begin{document}\begin{tikzcd}
@@ -44,16 +44,16 @@ Let $(M,\ \cdot,\ 1)$ be a monoid (group without inverses). We define a category
 Let $(P,\ \leq)$ be a poset. We define a category $\cat{P}$ as follows
 - ${} \Ob(\cat{P)}=P {}$
 - For $x, y\in P$, $${} \cat{P}(x,y)=\begin{cases}
-\{ * \},  & \text{if }x\leq y\\ \\
-\varnothing, & \text{otherwise}
+\{ * \}  & x\leq y\\ \\
+\varnothing & \text{otherwise}
 \end{cases} {}$$
 - For $x \in P,\ 1_x = * \in \cat{P}(x,x)$
 ## Basic notions
 Fix a category $\mathbb{C}$.
 
 Definition:
-Let $f:X \to Y$ be a map in $\mathbb{C}$.
-- An **inverse** of $f$ is a map $g:Y\to X$ such that $g\cdot f=1_X$ and $f\cdot g=1_Y$
+Let ${} f\colon X \to Y {}$ be a map in $\mathbb{C}$.
+- An **inverse** of $f$ is a map ${} g\colon Y\to X {}$ such that $g\cdot f=1_X$ and $f\cdot g=1_Y$
 ```tikz
 \usepackage{tikz-cd}\begin{document}\begin{tikzcd}
 X \rar{f} \ar[rd, bend right, "1_X"'] & Y\dar{g}\\
@@ -71,10 +71,10 @@ Examples:
 - In $\cat{Top}$, isomorphism = homeomorphism
 
 Definition:
-An object $T$ of $\mathbb{C}$ is said to be **terminal** if $\forall X \in \mathbb{C}\ \exists!f:X\to T$
+An object $T$ of $\mathbb{C}$ is said to be **terminal** if ${} \forall X \in \mathbb{C}\ \exists!f\colon X\to T {}$
 
 Remark:
-Let $T, T'\in \mathbb{C}$. Assume that $T, T'$ are terminal. Then there exists a unique isomorphism $f:T\to T'$ (since any map $T\to T$ is the identity).
+Let $T, T'\in \mathbb{C}$. Assume that $T, T'$ are terminal. Then there exists a unique isomorphism ${} f\colon T\to T' {}$ (since any map $T\to T$ is the identity).
 
 Examples:
 - In $\cat{Set}$, $\{ * \}$ is terminal

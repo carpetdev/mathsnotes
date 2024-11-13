@@ -1,6 +1,6 @@
 {
   "disableInTable": false,
   "disableOnIME": true,
-  "disableDecorations": true,
+  "disableDecorations": false,
   "disableAtomicRanges": false
 }

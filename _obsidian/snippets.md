@@ -47,7 +47,6 @@
 	{trigger: "@O", replacement: "\\Omega", options: "mA"},
 	{trigger: "ome", replacement: "\\omega", options: "mA"},
 	{trigger: "Ome", replacement: "\\Omega", options: "mA"},
-	{trigger: "xi", replacement: "xi", options: "mA"},
 
     // Text environment
     {trigger: "text", replacement: "\\text{$0}$1", options: "mA"},
@@ -94,7 +93,6 @@
     {trigger: "bar", replacement: "\\bar{$0}$1", options: "mA"},
 	{trigger: "dot", replacement: "\\dot{$0}$1", options: "mA", priority: -1},
 	{trigger: "ddot", replacement: "\\ddot{$0}$1", options: "mA"},
-	{trigger: "cdot", replacement: "\\cdot", options: "mA"},
 	{trigger: "tilde", replacement: "\\tilde{$0}$1", options: "mA"},
 	{trigger: "wtilde", replacement: "\\widetilde{$0}$1", options: "mA"},
 	{trigger: "und", replacement: "\\underline{$0}$1", options: "mA"},
@@ -127,7 +125,11 @@
     {trigger: "nabl", replacement: "\\nabla", options: "mA"},
 	{trigger: "del", replacement: "\\nabla", options: "mA"},
     {trigger: "xx", replacement: "\\times", options: "mA"},
-    {trigger: "**", replacement: "\\cdot", options: "mA"},
+    // {trigger: "**", replacement: "\\cdot", options: "mA"},
+	{trigger: "cdot", replacement: "\\cdot", options: "mA"},
+	{trigger: "\\cdots", replacement: "\\cdots", options: "mA", priority: 1},
+	{trigger: "\\dot{v}s", replacement: "\\vdots", options: "mA"},
+	{trigger: "\\dot{d}s", replacement: "\\dots", options: "mA"},
     {trigger: "para", replacement: "\\parallel", options: "mA"},
 
 	{trigger: "===", replacement: "\\equiv", options: "mA"},
@@ -143,6 +145,8 @@
 
     {trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
 	{trigger: "->", replacement: "\\to", options: "mA"},
+	{trigger: "::", replacement: "\\colon", options: "mA"},
+	{trigger: "ceq", replacement: "\\coloneqq", options: "mA"},
 	{trigger: "!>", replacement: "\\mapsto", options: "mA"},
     {trigger: "=>", replacement: "\\implies", options: "mA"},
 	{trigger: "=<", replacement: "\\impliedby", options: "mA"},
@@ -165,7 +169,9 @@
 	{trigger: "HH", replacement: "\\mathcal{H}", options: "mA"},
 	{trigger: "CC", replacement: "\\mathbb{C}", options: "mA"},
 	{trigger: "RR", replacement: "\\mathbb{R}", options: "mA"},
+	{trigger: /\\mathbb{R}([\dA-za-z])/, replacement: "\\mathbb{R}^[[0]]", options: "mA"},
 	{trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
+	{trigger: /\\mathbb{Z}([+-])/, replacement: "\\mathbb{Z}^[[0]]", options: "mA"},
 	{trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},
 	{trigger: "QQ", replacement: "\\mathbb{Q}", options: "mA"},
 	{trigger: "BB", replacement: "\\mathcal{B}", options: "mA"},
@@ -179,7 +185,7 @@
 	{trigger: "([^\\\\])(${GREEK})", replacement: "[[0]]\\[[1]]", options: "rmA", description: "Add backslash before Greek letters"},
 	{trigger: "([^\\\\])(${SYMBOL})", replacement: "[[0]]\\[[1]]", options: "rmA", description: "Add backslash before symbols"},
 
-    // Insert space after Greek letters and symbols
+    // Insert space after Greek letters and symbols  
 	{trigger: "\\\\(${GREEK}|${SYMBOL}|${MORE_SYMBOLS})([A-Za-z])", replacement: "\\[[0]] [[1]]", options: "rmA"},
 	{trigger: "\\\\(${GREEK}|${SYMBOL}) sr", replacement: "\\[[0]]^2", options: "rmA"},
 	{trigger: "\\\\(${GREEK}|${SYMBOL}) cb", replacement: "\\[[0]]^3", options: "rmA"},
@@ -273,6 +279,7 @@
 	{trigger: "avg", replacement: "\\langle $0 \\rangle $1", options: "mA"},
 	{trigger: "norm", replacement: "\\lvert $0 \\rvert $1", options: "mA", priority: 1},
 	{trigger: "Norm", replacement: "\\lVert $0 \\rVert $1", options: "mA", priority: 1},
+	{trigger: /([n\d])Norm/, replacement: "\\lVert $0 \\rVert_[[0]] $1", options: "mA", priority: 1},
 	{trigger: "ceil", replacement: "\\lceil $0 \\rceil $1", options: "mA"},
 	{trigger: "floor", replacement: "\\lfloor $0 \\rfloor $1", options: "mA"},
 	{trigger: "mod", replacement: "|$0|$1", options: "mA"},
@@ -287,6 +294,7 @@
 	{trigger: "lr[", replacement: "\\left[ $0 \\right] $1", options: "mA"},
 	{trigger: "lr|", replacement: "\\left| $0 \\right| $1", options: "mA"},
 	{trigger: "lra", replacement: "\\left< $0 \\right> $1", options: "mA"},
+	{trigger: "lr.", replacement: "\\left. $0 \\right| $1", options: "mA"},
 
 
     // Misc
