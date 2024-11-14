@@ -6,5 +6,8 @@
 \DeclareMathOperator{\char}{char}
 \DeclareMathOperator{\Nil}{Nil}
 \newcommand{\nlhd}{\mathrel{\rlap{\lneq}\raise.22ex{\lhd}}}
-\newcommand{\cont}{\unicode{x21AF}}
+\newcommand{\qea}{\unicode{x21AF}}
 \newcommand{\unsim}{\mathord{\sim}}
+
+\let\originalcolon\colon
+\renewcommand{\colon}{\mskip2mu\originalcolon}

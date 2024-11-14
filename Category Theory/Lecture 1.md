@@ -10,7 +10,7 @@ such that
 2. (unitality) $\forall f\in \mathbb{C}(X,Y), f\cdot1_X=f,\ 1_X\cdot f=f$
 
 Notation:
-- ${} X\in\Ob(\mathbb{C)} {}$ is an **object** of $\mathbb{C}$
+- $X\in\Ob(\mathbb{C)}$ is an **object** of $\mathbb{C}$
 - $f \in \mathbb{C}(X,Y)$ is a **morphism** (or map, or arrow) from $X$ to $Y$, written ${} f\colon X\to Y {}$
 - $g\cdot f$ is the **composite** of $f$ and $g$
 ```tikz
@@ -32,7 +32,7 @@ Examples (category, objects, morphisms):
 - $\cat{Mod}_R$, $R$-modules, $R$-module homomorphisms
 
 Definition: A category $\mathbb{C}$ is
-- **locally small** if for every ${} X,Y\in \Ob(C),\ \mathbb{C}(X,Y) {}$ is a set
+- **locally small** if for every $X,Y\in \Ob(C),\ \mathbb{C}(X,Y)$ is a set
 - **small** if locally small and $\Ob(\mathbb{C)}$ is a set
 ## Monoids as categories
 Let $(M,\ \cdot,\ 1)$ be a monoid (group without inverses). We define a category $\cat{M}$ as follows
@@ -65,7 +65,7 @@ Y \rar{g} \ar[rd, bend right, "1_Y"'] & X\dar{f}\\
 ```
 - $f$ is an **isomorphism** if there exists an inverse for it
 
-Examples:
+Example:
 - In $\cat{Set}$, isomorphism = bijection
 - In $\cat{Grp}$, $\cat{Ring}$, $\cat{Vect}_K$, etc., isomorphism = usual notions.
 - In $\cat{Top}$, isomorphism = homeomorphism
@@ -76,7 +76,7 @@ An object $T$ of $\mathbb{C}$ is said to be **terminal** if ${} \forall X \in \m
 Remark:
 Let $T, T'\in \mathbb{C}$. Assume that $T, T'$ are terminal. Then there exists a unique isomorphism ${} f\colon T\to T' {}$ (since any map $T\to T$ is the identity).
 
-Examples:
+Example:
 - In $\cat{Set}$, $\{ * \}$ is terminal
 - In $\cat{Grp}$, $\{ * \}$ is terminal
 - In $\cat{Rel}$, $\varnothing$ is terminal

@@ -8,5 +8,6 @@
   "useTab": true,
   "vimMode": true,
   "readableLineLength": false,
-  "spellcheck": false
+  "spellcheck": false,
+  "showLineNumber": true
 }

@@ -40,6 +40,6 @@ A topological space $X$ is **connected** if thre does not exist a pair of non-em
 Theorem:
 Every path connected space is connected.
 
-Proof: By contradiction, assume there are disjoint non-empty open sets $X_1,X_2$ such that $X=X_1\cup X_2$. Take $x_1\in X_1,\ x_2\in X_2$. Since $X$ is path connected it is possible to find ${} f\colon [0,1]\to X {}$ continuous such that $f(0)=x_1,\ f(1)=x_2$. But then $f^{-1}(X_1), f^{-1}(X_2)$ are open in $[0,1]$. In addition, they are non-empty. Now, $f^{-1}(X_1)\cup f^{-1}(X_2)=f^{-1}(X_1\cup X_2)=f^{-1}(X)=[0,1]$, but also $f^{-1}(X_1)\cap f^{-1}(X_2)=f^{-1}(X_1\cap X_2)=f^{-1}(\varnothing)=\varnothing \implies [0,1]$ is not connected. $\cont$
+Proof: By contradiction, assume there are disjoint non-empty open sets $X_1,X_2$ such that $X=X_1\cup X_2$. Take $x_1\in X_1,\ x_2\in X_2$. Since $X$ is path connected it is possible to find ${} f\colon [0,1]\to X {}$ continuous such that $f(0)=x_1,\ f(1)=x_2$. But then $f^{-1}(X_1), f^{-1}(X_2)$ are open in $[0,1]$. In addition, they are non-empty. Now, $f^{-1}(X_1)\cup f^{-1}(X_2)=f^{-1}(X_1\cup X_2)=f^{-1}(X)=[0,1]$, but also $f^{-1}(X_1)\cap f^{-1}(X_2)=f^{-1}(X_1\cap X_2)=f^{-1}(\varnothing)=\varnothing \implies [0,1]$ is not connected. $\qea$
 
 

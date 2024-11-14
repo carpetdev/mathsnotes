@@ -1,6 +1,6 @@
 [
 	// By me
-	{trigger: "tikzcd", replacement: "```tikz\n\\usepackage{tikz-cd}\\begin{document}\\begin{tikzcd}\n$0\n\\end{tikzcd}\\end{document}\n```\n$1", options: "tA"},
+	{trigger: "tikzcd", replacement: "```tikz\n\\usepackage{tikz-cd, amssymb}\\begin{document}\\begin{tikzcd}\n$0\n\\end{tikzcd}\\end{document}\n```\n$1", options: "tA"},
 	{trigger: /\\\\([a-zA-Z]+)/, replacement: "\\cat{[[0]]}", options: "m", priority: -1},
 	{trigger: /\\\\([a-zA-Z]+)([ \-.,])/, replacement: "$\\cat{[[0]]}$[[1]]", options: "tA"},
 	{trigger: /\\([a-zA-Z])([ \-.,])/, replacement: "$[[0]]$[[1]]", options: "tA"},
@@ -10,7 +10,6 @@
     {trigger: "sub!=", replacement: "\\subsetneq", options: "mA"},
     {trigger: "!sub=", replacement: "\\nsubseteq", options: "mA"},
     {trigger: "\\bs", replacement: "${} \\blacksquare$", options: "t"},
-    {trigger: "homeom", replacement: "homeomorphism", options: "tA"},
 
     // Math mode
 	{trigger: "mk", replacement: "$$0$", options: "tA"},
@@ -50,7 +49,8 @@
 
     // Text environment
     {trigger: "text", replacement: "\\text{$0}$1", options: "mA"},
-    {trigger: "\"", replacement: "\\text{$0}$1", options: "mA"},
+    {trigger: "\"", replacement: "\"$0\"$1", options: "mA"},
+    {trigger: "''", replacement: "\"$0\"$1", options: "mA"},
 
     // Basic operations
     {trigger: "sr", replacement: "^2", options: "mA"},
@@ -145,6 +145,10 @@
 
     {trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
 	{trigger: "->", replacement: "\\to", options: "mA"},
+	{trigger: "-->", replacement: "\\longrightarrow", options: "mA"},
+	{trigger: "longra", replacement: "\\longrightarrow", options: "mA"},
+	{trigger: "!->", replacement: "\\longmapsto", options: "mA"},
+	{trigger: "longmt", replacement: "\\longmapsto", options: "mA"},
 	{trigger: "::", replacement: "\\colon", options: "mA"},
 	{trigger: "ceq", replacement: "\\coloneqq", options: "mA"},
 	{trigger: "!>", replacement: "\\mapsto", options: "mA"},
@@ -162,6 +166,7 @@
     {trigger: "sub=", replacement: "\\subseteq", options: "mA"},
     {trigger: "sup=", replacement: "\\supseteq", options: "mA"},
 	{trigger: "eset", replacement: "\\varnothing", options: "mA"},
+	{trigger: "rset", replacement: "rset", options: "mA"},
 	{trigger: "set", replacement: "\\{$0\\}$1", options: "mA"},
 	{trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
 
@@ -226,12 +231,12 @@
 
 
     // Visual operations
-	{trigger: "U", replacement: "\\underbrace{ ${VISUAL} }_{ $0 }", options: "mA"},
-	{trigger: "O", replacement: "\\overbrace{ ${VISUAL} }^{ $0 }", options: "mA"},
-	{trigger: "B", replacement: "\\underset{ $0 }{ ${VISUAL} }", options: "mA"},
-	{trigger: "C", replacement: "\\cancel{ ${VISUAL} }", options: "mA"},
-	{trigger: "K", replacement: "\\cancelto{ $0 }{ ${VISUAL} }", options: "mA"},
-	{trigger: "S", replacement: "\\sqrt{ ${VISUAL} }", options: "mA"},
+	{trigger: "U", replacement: "\\underbrace{${VISUAL}}_{$0}", options: "mA"},
+	{trigger: "O", replacement: "\\overbrace{${VISUAL} }^{$0}", options: "mA"},
+	{trigger: "B", replacement: "\\underset{$0}{${VISUAL}}", options: "mA"},
+	{trigger: "S", replacement: "\\overset{$0}{${VISUAL}}", options: "mA"},
+	{trigger: "C", replacement: "\\cancel{${VISUAL}}", options: "mA"},
+	{trigger: "K", replacement: "\\cancelto{$0{${VISUAL}}", options: "mA"},
 
 
     // Physics
@@ -241,7 +246,7 @@
     // Quantum mechanics
     {trigger: "dag", replacement: "^{\\dagger}", options: "mA"},
 	{trigger: "o+", replacement: "\\oplus ", options: "mA"},
-	{trigger: "ox", replacement: "\\otimes ", options: "mA"},
+	// {trigger: "ox", replacement: "\\otimes ", options: "mA"},
     {trigger: "bra", replacement: "\\bra{$0} $1", options: "mA"},
 	{trigger: "ket", replacement: "\\ket{$0} $1", options: "mA"},
 	{trigger: "brk", replacement: "\\braket{ $0 | $1 } $2", options: "mA"},
