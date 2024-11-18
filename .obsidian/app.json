@@ -3,11 +3,13 @@
   "alwaysUpdateLinks": false,
   "trashOption": "system",
   "defaultViewMode": "source",
-  "strictLineBreaks": true,
+  "strictLineBreaks": false,
   "showRibbon": false,
-  "useTab": true,
+  "useTab": false,
   "vimMode": true,
   "readableLineLength": false,
   "spellcheck": false,
-  "showLineNumber": true
+  "showLineNumber": false,
+  "showIndentGuide": false,
+  "showUnsupportedFiles": false
 }

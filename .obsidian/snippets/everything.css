@@ -1,0 +1,26 @@
+/* /blacksquare */
+span:has(.mjx-c25FC) {
+  float: right;
+}
+
+.block-language-tikz svg {
+  zoom: 1.25;
+  margin: 10px 0;
+}
+
+.red {
+  color: red;
+}
+
+.theme-dark .pdf-container:has(.textLayer :first-child.endOfContent) canvas {
+  filter: invert(1);
+}
+
+.theme-dark .pdf-cropped-embed {
+  filter: invert(1);
+}
+
+/* Vim cursor blinking off */
+.cm-cursorLayer {
+  animation: none !important;
+}

@@ -1,7 +1,0 @@
-.theme-dark .pdf-container:has(.textLayer :first-child.endOfContent) canvas {
-    filter: invert(1);
-}
-
-.theme-dark .pdf-cropped-embed {
-    filter: invert(1);
-}

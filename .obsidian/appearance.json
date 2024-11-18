@@ -4,7 +4,12 @@
     "S - Embed Adjustments",
     "tikzcd",
     "vim",
-    "pdf"
+    "pdf",
+    "mathjax",
+    "colours",
+    "Embed Adjustments",
+    "editor",
+    "everything"
   ],
   "accentColor": "#f55ce8",
   "nativeMenus": false

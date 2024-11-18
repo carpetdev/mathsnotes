@@ -346,7 +346,6 @@ var makeTransactionFilter = (plugin) => {
       (_a = tr.annotation(import_state3.Transaction.userEvent)) == null
         ? void 0
         : _a.split(".")[0];
-    console.log(userEvent, tr);
     if (userEvent === "input") {
       if (!tr.changes.inserted.length) return tr;
       if (plugin.settings.disableOnIME) {

@@ -32,15 +32,6 @@
       "key": "P"
     }
   ],
-  "workspace:close": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "W"
-    }
-  ],
   "workspace:close-window": [],
   "editor:delete-paragraph": [],
   "app:toggle-left-sidebar": [
@@ -79,6 +70,15 @@
         "Mod"
       ],
       "key": "L"
+    }
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "E"
     }
   ]
 }
