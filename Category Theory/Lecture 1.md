@@ -3,8 +3,8 @@ A **category** $\cat{C}$ consists of
 
 1. A class $\ob(\cat{C})$
 2. For every $X,Y \in \ob(\cat{C)}$, a class $\cat{C}(X,Y)$
-3. For every ${} X, Y, Z \in \ob(C) {}$, a function $\cat{C}(Y,Z) \times \cat{C}(X,Y) \overset{\cdot}{\longrightarrow} \cat{C}(X,Z)$
-4. For every ${} X\in\ob(\cat{C)} {}$, an element $1_X \in \cat{C}(X,X)$
+3. For every $X, Y, Z \in \ob(C)$, a function $\cat{C}(Y,Z) \times \cat{C}(X,Y) \overset{\cdot}{\longrightarrow} \cat{C}(X,Z)$
+4. For every $X\in\ob(\cat{C)}$, an element $1_X \in \cat{C}(X,X)$
 
 such that
 

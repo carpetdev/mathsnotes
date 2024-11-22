@@ -2,13 +2,13 @@
 
 A **(two-sided) ideal** of $R$ is a subgroup $I\leq R$ such that $ab, ba \in I$ for all $b\in I$. We'll write $I\unlhd R$. It's a **proper** ideal if $I\neq R$. If $R$ is non-commutative, then we consider **one-sided** ideals, but we mostly deal with commutative rings. E.g. **principal ideal** $Ra = (a) = \{ ba:b\in R \}$.
 
-A ring **homomorphism** is a function ${} f\colon R\to S {}$ such that $f(a+b)=f(a)+f(b)$, $f(ab) = f(a)f(b)$ and $f(1)=1$. Note: some consider $f(1)=e$, such that $e^2=e$. If ${} f\colon R\to R {}$, it is an **endomorphism**. If $f$ is bijective, it is an **isomorphism**. If $f$ is an endomorphism and isomorphism, it is an **automorphism**. Note: ${} \Ima(f)$ is a subring of the codomain and $\ker(f)$ is an ideal of the domain.
+A ring **homomorphism** is a function $f\colon R\to S$ such that $f(a+b)=f(a)+f(b)$, $f(ab) = f(a)f(b)$ and $f(1)=1$. Note: some consider $f(1)=e$, such that $e^2=e$. If ${} f\colon R\to R {}$, it is an **endomorphism**. If $f$ is bijective, it is an **isomorphism**. If $f$ is an endomorphism and isomorphism, it is an **automorphism**. Note: ${} \Ima(f)$ is a subring of the codomain and $\ker(f)$ is an ideal of the domain.
 
 Remark:
 For every ring $R$, there exists a ring homomorphism $\rho:\mathbb{Z}\to R$, such that $\rho(1_\mathbb{Z})=1_R$, i.e. $$\rho(k) = \begin{cases}
-\underbrace{1+\cdots +1}_{k\text{ times}} & k>0 \\
+\underbrace{1+\dots +1}_{k\text{ times}} & k>0 \\
 0 &  k =0 \\
-\underbrace{(-1)+\cdots +(-1)}_{-k\text{ times}} & k<0 
+\underbrace{(-1)+\dots +(-1)}_{-k\text{ times}} & k<0 
 \end{cases}$$
 Then ${} \Ima(f)$ is a commutative subring of $R$, and ${} \ker(f) \lhd \mathbb{Z} {}$, i.e. ${} \ker(f) = n\mathbb{Z} {}$ for some $n\in \mathbb{N}\cup \{ 0 \}$. We define the **characteristic** of $R$ as $\char(R)=n$. E.g. $\char(\mathbb{Z}) = 0 = \char(\mathbb{Q}) = \char(\mathbb{Z}[x])$, $\char(\mathbb{Z}/m) = m$.
 

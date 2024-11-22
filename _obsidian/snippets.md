@@ -87,8 +87,6 @@
     {trigger: "lim", replacement: "\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "m"},
     {trigger: "o+", replacement: "\\oplus", options: "mA"},
     {trigger: "oxx", replacement: "\\otimes", options: "mA"},
-    {trigger: "+-", replacement: "\\pm", options: "mA"},
-    {trigger: "-+", replacement: "\\mp", options: "mA"},
     {trigger: "xx", replacement: "\\times", options: "mA"},
     {trigger: "**", replacement: "\\cdot", options: "mA"},
 
@@ -127,7 +125,7 @@
     {trigger: "{", replacement: "\\{$0\\", options: "m"},
 
     // Fonts
-    {trigger: "rm", replacement: "\\textrm{$0}$1", options: "mw"},
+    {trigger: "rm", replacement: "\\textrm{$0}", options: "mw"},
     {trigger: "bb", replacement: "\\mathbb{$0}", options: "m"},
     {trigger: "bf", replacement: "\\mathbf{$0}", options: "m"},
     {trigger: "cal", replacement: "\\mathcal{$0}", options: "m"},
@@ -135,7 +133,7 @@
     {trigger: "HH", replacement: "\\mathcal{H}", options: "mA"},
     {trigger: "CC", replacement: "\\mathbb{C}", options: "mA"},
     {trigger: "RR", replacement: "\\mathbb{R}", options: "mA"},
-    {trigger: /\\mathbb{R}([\dA-za-z])/, replacement: "\\mathbb{R}^[[0]]", options: "mA"},
+    {trigger: /\\mathbb{R}([\da-z])/i, replacement: "\\mathbb{R}^[[0]]", options: "mA"},
     {trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
     {trigger: /\\mathbb{Z}([+-])/, replacement: "\\mathbb{Z}^[[0]]", options: "mA"},
     {trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},
@@ -145,7 +143,7 @@
     {trigger: /\\\\([A-Za-z]+)/, replacement: "\\cat{[[0]]}", options: "mA"},
     {trigger: /\$\\\\([A-Za-z]+)/, replacement: "$\\cat{[[0]]}", options: "tA"},
     {trigger: /(?<!\$)\\\\([A-Za-z]+)/, replacement: "$\\cat{[[0]]}$", options: "tA"},
-    {trigger: /(?<![\$\\])\\([A-Za-z]+)/, replacement: "$[[0]]$", options: "tA"},
+    {trigger: /(?<![\$\\])\\([\dA-Za-z]+)/, replacement: "$[[0]]$", options: "tA"},
     {trigger: /\\([A-Za-z])([ -,.])/, replacement: "$[[0]]$[[1]]", options: "tA"},
 
     // Derivatives and integrals
@@ -165,6 +163,7 @@
     {trigger: "S", replacement: "\\overset{$0}{${VISUAL}}", options: "mA"},
     {trigger: "C", replacement: "\\cancel{${VISUAL}}", options: "mA"},
     {trigger: "K", replacement: "\\cancelto{$0}{${VISUAL}}", options: "mA"},
+    {trigger: "|", replacement: "\\left. ${VISUAL} \\right|_$1", options: "mA"},
 
     // Environments
     {trigger: "pmat", replacement: "\\begin{pmatrix}\n$0\n\\end{pmatrix}", options: "MA"},
@@ -206,7 +205,7 @@
     {trigger: "lr[", replacement: "\\left[ $0 \\right] $1", options: "mA"},
     {trigger: "lr|", replacement: "\\left| $0 \\right| $1", options: "mA"},
     {trigger: "lra", replacement: "\\left< $0 \\right> $1", options: "mA"},
-    {trigger: "lr.", replacement: "\\left. $0 \\right| $1", options: "mA"},
+    {trigger: "lr.", replacement: "\\left. $0 \\right|$1", options: "mA"},
 
 
     // Misc

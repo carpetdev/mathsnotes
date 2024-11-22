@@ -10,7 +10,7 @@ Theorem:
 Let $F\colon \cat{C}\to \cat{D}$ be a functor. The following are equivalent:
 1. $F$ is an equivalence
 2. $F$ is:
-    - essentially surjective on objects (for all $Y\in\cat{D}$ there exists ${} X\in\cat{C}$ such that ${} F_oX\cong Y {}$)
+    - essentially surjective on objects (for all $Y\in\cat{D}$ there exists ${} X\in\cat{C}$ such that $F_oX\cong Y$)
     - faithful (each $F_{X,Y}$ is injective)
     - full (each $F_{X,Y}$ is surjective)
 

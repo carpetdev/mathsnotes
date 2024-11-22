@@ -44,7 +44,7 @@ More precisely. each product $b_{i}b_{j}$ again lies in $A$, so can be expressed
 > For $\mathbb{C}$ an $\mathbb{R}$-algebra, the basis $\{ 1_{\mathbb{C}}, i \}$ recovers the usual complex multiplication.
 
 >[!def] Direct product
->If $A_{1}, A_{2}, \dots, A_{n}$ are $K$-algebras, their **direct product** is the algebra with underlying vector space $$A_{1}\times A_{2}\times \cdots A_{n}=\{ (a_{1},a_{2},\dots,a_{n}) \mid a_i\in A_i,\ i=1,2,\dots,n \}$$ and component-wise addition and multiplication.
+>If $A_{1}, A_{2}, \dots, A_{n}$ are $K$-algebras, their **direct product** is the algebra with underlying vector space $$A_{1}\times A_{2}\times \dots A_{n}=\{ (a_{1},a_{2},\dots,a_{n}) \mid a_i\in A_i,\ i=1,2,\dots,n \}$$ and component-wise addition and multiplication.
 
 >[!def] Opposite algebra
 >If $A$ is any $K$-algebra, then the **opposite algebra** $A^{op}$ of $A$ has the same underlying $K$-vector space as $A$, but the multiplication, denoted by $*$, is given by $a* b=ba$ for all $a, b\in A$.

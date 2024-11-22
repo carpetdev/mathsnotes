@@ -1,6 +1,6 @@
 Not all connected spaces are path connected. E.g. $X=\left\{ \left( x,\sin\left( \frac{1}{x} \right) \right) \mid x>0 \right\} \cup \{(x,0)\mid x\leq 0\}$ with the relative topology from $\mathbb{R}^2$.
 
-Given an equivalence relation on a topological space $X$, the quotient set $X/\unsim$ inherits a natural topology called the **quotient topology**: A subset ${} U\subseteq X/\unsim {}$ is defined to be open if $\pi ^{-1}(U)\subseteq X$ is open in $X$, where ${} \pi\colon X\to X/\unsim {}$ is the projection map given by $\pi(x) = [x]$. Notice that $\pi$ is continuous by definition when ${} X/\unsim {}$ is equipped with the quotient topology. Exercise: Check this defines a topology.
+Given an equivalence relation on a topological space $X$, the quotient set $X/\unsim$ inherits a natural topology called the **quotient topology**: A subset ${} U\subseteq X/\unsim {}$ is defined to be open if $\pi ^{-1}(U)\subseteq X$ is open in $X$, where ${} \pi\colon X\to X/\unsim {}$ is the projection map given by $\pi(x) = [x]$. Notice that $\pi$ is continuous by definition when $X/\unsim$ is equipped with the quotient topology. Exercise: Check this defines a topology.
 
 Example:
 1. $X = \mathbb{R}$, $x\sim y$ if $x-y\in \mathbb{Z}$. ${} X/\unsim {}$ is homeomorphic to $S^1 = \{(x_1,x_2)\in \mathbb{R}^2 \mid x_1^2+x_2^2=1\}$. For instance, the map $f\colon X/\unsim\to S^1,\ [x]\mapsto(\cos 2\pi x, \sin 2\pi x)$ is a homeomorphism. Exercise: Check.
@@ -17,7 +17,7 @@ A set $X$ equipped with a distance function $d$ inheritss a natural topology cal
 
 Remark:
 We have different ways of defining the same topology on a space $X$. For instance, if $X=\mathbb{R}^n$:
-1. Product topology: $\mathbb{R}^n=\underbrace{ \mathbb{R}\times \cdots\times \mathbb{R} }_{ n\text{ times} }$
+1. Product topology: $\mathbb{R}^n=\underbrace{ \mathbb{R}\times \dots\times \mathbb{R} }_{ n\text{ times} }$
 2. Metric topology: $d(x,y)\coloneqq \sqrt{\sum_{i=1}^n(x_i-y_i)^2}$
 
 Different distance functions can also give the same topology. E.g. on $\mathbb{R}^n$, $d(x,y)=\max\{|x_i-y_i|:i=1,\dots,n\}$ gives the usual topology.

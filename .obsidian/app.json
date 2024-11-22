@@ -11,5 +11,6 @@
   "spellcheck": false,
   "showLineNumber": false,
   "showIndentGuide": false,
-  "showUnsupportedFiles": false
+  "showUnsupportedFiles": false,
+  "showInlineTitle": true
 }

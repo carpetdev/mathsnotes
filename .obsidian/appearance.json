@@ -11,6 +11,8 @@
     "editor",
     "everything"
   ],
-  "accentColor": "#f55ce8",
-  "nativeMenus": false
+  "accentColor": "#e3008c",
+  "nativeMenus": false,
+  "showViewHeader": false,
+  "cssTheme": "Minimal"
 }
