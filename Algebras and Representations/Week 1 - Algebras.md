@@ -9,7 +9,7 @@
 - sorted up to here
 
 > [!def] Algebra
-> An algebra A over a field [[Notation#$K$]] (or a $K$-algebra) is a [[ring]] which is also a [[Module#^8fdbee|vector space]] under the same addition and a scalar multiplication satisfying $$\lambda \cdot (xy) = (\lambda \cdot x) y = x(\lambda \cdot y)$$ for all $\lambda \in K,\ x, y\in A$.
+> An algebra A over a field [[Notation#$K$]] (or a $K$-algebra) is a [[Ring]] which is also a [[Module#^8fdbee|vector space]] under the same addition and a scalar multiplication satisfying $$\lambda \cdot (xy) = (\lambda \cdot x) y = x(\lambda \cdot y)$$ for all $\lambda \in K,\ x, y\in A$.
 > 
 > The **dimension** of a $K$-algebra $A$ is the dimension of $A$ as a $K$-vector space. The $K$-algebra is termed finite- or infinite-dimensional based on the vector space, and commutative or not based on the ring.
 ^b4fb14

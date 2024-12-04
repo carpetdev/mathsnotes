@@ -142,9 +142,8 @@
     {trigger: "PP", replacement: "\\mathcal{P}", options: "mA"},
     {trigger: /\\\\([A-Za-z]+)/, replacement: "\\cat{[[0]]}", options: "mA"},
     {trigger: /\$\\\\([A-Za-z]+)/, replacement: "$\\cat{[[0]]}", options: "tA"},
-    {trigger: /(?<!\$)\\\\([A-Za-z]+)/, replacement: "$\\cat{[[0]]}$", options: "tA"},
-    {trigger: /(?<![\$\\])\\([\dA-Za-z]+)/, replacement: "$[[0]]$", options: "tA"},
-    {trigger: /\\([A-Za-z])([ -,.])/, replacement: "$[[0]]$[[1]]", options: "tA"},
+    {trigger: /(?<!\$)\\\\([A-Za-z])/, replacement: "$\\cat{[[0]]}$", options: "tA"},
+    {trigger: /(?<![\$\\])\\([A-Za-z])/, replacement: "$[[0]]$", options: "tA"},
 
     // Derivatives and integrals
     {trigger: "par", replacement: "\\frac{\\partial ${0:y}}{\\partial ${1:x}} $2", options: "m"},
