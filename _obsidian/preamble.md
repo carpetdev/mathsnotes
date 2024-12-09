@@ -1,4 +1,5 @@
 \DeclareMathOperator{\ob}{ob}
+\DeclareMathOperator{\Eq}{Eq}
 \DeclareMathOperator{\End}{End}
 \DeclareMathOperator{\GL}{GL}
 \DeclareMathOperator{\Ima}{Im}

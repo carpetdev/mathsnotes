@@ -12,5 +12,6 @@
   "showLineNumber": false,
   "showIndentGuide": false,
   "showUnsupportedFiles": false,
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "newFileLocation": "current"
 }

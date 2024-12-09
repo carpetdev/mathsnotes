@@ -10,6 +10,7 @@
     // Obsidian
     {trigger: /(![a-z]+)/, replacement: ">[[[0]]]", options: "t"},
     {trigger: "tikzcd", replacement: "```tikz\n\\usepackage{tikz-cd, amsmath, amssymb}\\begin{document}\\begin{tikzcd}[every label/.append style={font=\\small}]\n$0\n\\end{tikzcd}\\end{document}\n```\n$1", options: "tA"},
+    {trigger: "tikzbrace", replacement: "every matrix/.append style={left delimiter=\\{, right delimiter=\\}}", options: "mA"},
 
     // Math mode
     {trigger: "MK", replacement: "$$$0$$$1", options: "tA"},
@@ -101,7 +102,9 @@
     {trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
     {trigger: "->", replacement: "\\to", options: "mA"},
     {trigger: "-->", replacement: "\\longrightarrow", options: "mA"},
+    {trigger: "<--", replacement: "\\lonleftarrow", options: "mA"},
     {trigger: "longra", replacement: "\\longrightarrow", options: "mA"},
+    {trigger: "longla", replacement: "\\longleftarrow", options: "mA"},
     {trigger: "!->", replacement: "\\longmapsto", options: "mA"},
     {trigger: "longmt", replacement: "\\longmapsto", options: "mA"},
     {trigger: "::", replacement: "\\colon $0\\to  $1", options: "mA"},

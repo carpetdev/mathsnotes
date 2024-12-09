@@ -94,7 +94,6 @@ GH\rar["Gf"']&GY
 If all $\phi_X$ are isomorphisms then we call $\phi$ a **natural isomorphism**. Exercise: check this is the same as being an isomorphism in $[\cat{C},\cat{D}]$.
 
 Example:
-Have
 ```tikz
 \usepackage{tikz-cd, amsmath, amssymb}\begin{document}\begin{tikzcd}[every label/.append style={font=\small}]
 \mathbf{CRing}\rar[bend left, "\big(\text{M}_{n,n}(-)){,}\ \text{matrix mult\textsuperscript{n}}\big)", ""{name=U, below}]\rar[bend right, "U"', ""{name=D, above}] &[5em] \mathbf{Mon}

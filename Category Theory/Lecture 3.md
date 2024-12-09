@@ -39,7 +39,7 @@ GFY\rar["\eta_{GFY}"]\rar[bend right=60, "GF\eta_Y"', "\scriptsize\text{(lemma)}
 ```
 So $GFf=Gg$, but by faithfulness of $G$ (because of the symmetry), this means $Ff=g$, i.e. $F$ is full. //
 
-$\circled{2}\implies\circled{1}:$ Assume $F\colon C\to\cat{D}$ essentially surjective, full and faithful. Define ${} G_o {}$ such that for $Y\in\cat{D}$, $FGY\overset{\large\varepsilon_Y}{\cong}Y$ in $\cat{D}$. Note that the maps $\cat{C}(GX,GY)\to\cat{D}(FGX,FGY)$ are bijections. Define $G_{X,Y}$ to make the following diagram commute:
+$\circled{2}\implies\circled{1}:$ Assume $F\colon C\to\cat{D}$ essentially surjective, full and faithful. Define $G_o$ such that for $Y\in\cat{D}$, $FGY\overset{\large\varepsilon_Y}{\cong}Y$ in $\cat{D}$. Note that the maps $\cat{C}(GX,GY)\to\cat{D}(FGX,FGY)$ are bijections. Define $G_{X,Y}$ to make the following diagram commute:
 ```tikz
 \usepackage{tikz-cd, amsmath, amssymb}\begin{document}\begin{tikzcd}[every label/.append style={font=\small}]
 FGX\rar[dashed, "FGf"]\dar["\varepsilon_X"']&FGY\\

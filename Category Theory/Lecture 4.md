@@ -3,7 +3,7 @@ Idea: Generalise equivalences so that $\eta, \varepsilon$ are not invertible to 
 Let $\cat{C}$, $\cat{D}$ be categories. An **adjunction** between them consists of functors
 ```tikz
 \usepackage{tikz-cd, amsmath, amssymb}\begin{document}\begin{tikzcd}[every label/.append style={font=\small}]
-\mathcal{C}\rar[shift right, "R"'] & \mathcal{D}\lar[shift right, "L"']
+\mathcal{D}\rar[shift right, "R"'] & \mathcal{C}\lar[shift right, "L"']
 \end{tikzcd}\end{document}
 ```
 and natural transformations $\eta\colon 1_\cat{C}\Rightarrow RL$, $\varepsilon\colon LR\Rightarrow 1_\cat{D}$ such that the following **triangle identities** hold:
@@ -21,14 +21,14 @@ Often write $L \dashv^\eta_\varepsilon R$ (or just $L\dashv R$). $L$ and $R$ are
 Theorem:
 Let $\cat{D}\overset{R}{\longrightarrow}\cat{C}$ be a functor. The following are equivalent:
 1. There is a functor $L\colon \cat{C}\to \cat{D}$ and natural transformations $\eta\colon 1_\cat{C}\Rightarrow RL$, $\varepsilon\colon LR\Rightarrow 1_\cat{D}$ forming an adjunction
-2. (Hom-sets) There is a functor ${} L\colon \cat{C}\to \cat{D} {}$ and bijections $\cat{D}(LX,Y)\overunderset{\phi_{X,Y}}{\cong}{\longrightarrow}\cat{C}(X,RY)$ satisfying (naturality in $X,Y$) for $X\overset{x}{\longrightarrow}X'$ in $\cat{C}$ and $Y\overset{y}{\longrightarrow}Y'$ in $\cat{D}$:
+2. (Hom-sets) There is a functor $L\colon \cat{C}\to \cat{D}$ and bijections $\cat{D}(LX,Y)\overunderset{\phi_{X,Y}}{\cong}{\longrightarrow}\cat{C}(X,RY)$ satisfying (naturality in $X,Y$) for $X'\overset{x}{\longrightarrow}X$ in $\cat{C}$ and $Y\overset{y}{\longrightarrow}Y'$ in $\cat{D}$:
 ```tikz
 \usepackage{tikz-cd, amsmath, amssymb}\begin{document}\begin{tikzcd}[every label/.append style={font=\small}]
 \mathcal{D}(LX,Y)\dar["{\mathcal{D}(Lx,Y)}"'] \rar["\phi_{X,Y}"] & \mathcal{C}(X,RY)\dar["{\mathcal{C}(x,RY)}"]\\
-\mathcal{D}(LX',Y)\rar["\phi_{X',Y}"'] & \mathcal{D}(X',RY)
+\mathcal{D}(LX',Y)\rar["\phi_{X',Y}"'] & \mathcal{C}(X',RY)
 \end{tikzcd} \quad and \quad \begin{tikzcd}[every label/.append style={font=\small}]
 \mathcal{D}(LX,Y)\dar["{\mathcal{D}(LX,y)}"'] \rar["\phi_{X,Y}"] & \mathcal{C}(X,RY)\dar["{\mathcal{C}(X,Ry)}"]\\
-\mathcal{D}(LX,Y')\rar["\phi_{X,Y'}"'] & \mathcal{D}(X,RY')
+\mathcal{D}(LX,Y')\rar["\phi_{X,Y'}"'] & \mathcal{C}(X,RY')
 \end{tikzcd}\end{document}
 ```
 3. (Universal Property) $X\mapsto LX$, $\eta_X\colon X\to RLX$ mappings such that for all $X\overset{f}{\to}RY$ there exists a unique $f^\#\colon LX\to Y$ satisfying $R(f^\#).\eta_X=f$, i.e.
