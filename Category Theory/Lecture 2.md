@@ -96,7 +96,7 @@ If all $\phi_X$ are isomorphisms then we call $\phi$ a **natural isomorphism**. 
 Example:
 ```tikz
 \usepackage{tikz-cd, amsmath, amssymb}\begin{document}\begin{tikzcd}[every label/.append style={font=\small}]
-\mathbf{CRing}\rar[bend left, "\big(\text{M}_{n,n}(-)){,}\ \text{matrix mult\textsuperscript{n}}\big)", ""{name=U, below}]\rar[bend right, "U"', ""{name=D, above}] &[5em] \mathbf{Mon}
+\mathbf{CRing}\rar[bend left, "\big(\text{M}_{n,n}(-)){,}\ \text{matrix mult\textsuperscript{n}}\big)", ""{name=U, below}]\rar[bend right, "U"', ""{name=D}] &[5em] \mathbf{Mon}
 \ar[Rightarrow, from=U, to=D, "\det" pos=0.6]
 \end{tikzcd}\end{document}
 ```

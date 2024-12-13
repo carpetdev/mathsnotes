@@ -11,6 +11,8 @@
     {trigger: /(![a-z]+)/, replacement: ">[[[0]]]", options: "t"},
     {trigger: "tikzcd", replacement: "```tikz\n\\usepackage{tikz-cd, amsmath, amssymb}\\begin{document}\\begin{tikzcd}[every label/.append style={font=\\small}]\n$0\n\\end{tikzcd}\\end{document}\n```\n$1", options: "tA"},
     {trigger: "tikzbrace", replacement: "every matrix/.append style={left delimiter=\\{, right delimiter=\\}}", options: "mA"},
+    {trigger: "tikznat", replacement: "```tikz\n\\usepackage{tikz-cd, amsmath, amssymb}\\begin{document}\\begin{tikzcd}[every label/.append style={font=\\small}]\n${0:\\mathcal{C}}\\rar[bend left=40, \"${1:F}\", \"\"'{name=U}]\\rar[bend right=40, \"${2:G}\"', \"\"{name=D}] & ${3:\\mathcal{D}}\n\\ar[Rightarrow, from=U, to=D, \"${4:\\phi}\"]\n\\end{tikzcd}\\end{document}\n```", options: "tA"},
+    {trigger: "tikzadj", replacement: "```tikz\n\\usepackage{tikz-cd, amsmath, amssymb}\\begin{document}\\begin{tikzcd}[every label/.append style={font=\\small}]\n${0:\\mathcal{C}}\\rar[phantom, \"${1:\\bot}\"]\\rar[shift right=3, \"${2:R}\"'] & ${3:\\mathcal{D}}\\lar[shift right=3, \"${4:L}\"']\n\\end{tikzcd}\\end{document}\n```", options: "tA"},
 
     // Math mode
     {trigger: "MK", replacement: "$$$0$$$1", options: "tA"},
@@ -45,7 +47,7 @@
     {trigger: "@p", replacement: "\\phi", options: "mA"},
 
     // Text environment
-    {trigger: /te?xt/, replacement: "\\text{$0}$1", options: "mA"},
+    {trigger: /txt/, replacement: "\\text{$0}$1", options: "mA"},
     {trigger: "\"", replacement: "\"$0\"$1", options: "mA"},
     {trigger: "''", replacement: "\"$0\"$1", options: "mA"},
     {trigger: "tss", replacement: "\\textsuperscript", options: "tA"},
@@ -99,20 +101,17 @@
     {trigger: "sim=", replacement: "\\simeq", options: "mA"},
 
     // Arrows
-    {trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
-    {trigger: "->", replacement: "\\to", options: "mA"},
-    {trigger: "-->", replacement: "\\longrightarrow", options: "mA"},
-    {trigger: "<--", replacement: "\\lonleftarrow", options: "mA"},
+    {trigger: "leftra", replacement: "\\leftrightarrow", options: "mA"},
+    {trigger: "leftla", replacement: "\\leftleftarrows", options: "mA"},
+    {trigger: "rightra", replacement: "\\rightrightarrows", options: "mA"},
     {trigger: "longra", replacement: "\\longrightarrow", options: "mA"},
+    {trigger: "Longra", replacement: "\\Longrightarrow", options: "mA"},
     {trigger: "longla", replacement: "\\longleftarrow", options: "mA"},
-    {trigger: "!->", replacement: "\\longmapsto", options: "mA"},
     {trigger: "longmt", replacement: "\\longmapsto", options: "mA"},
+    {trigger: "rightra", replacement: "\\longmapsto", options: "mA"},
     {trigger: "::", replacement: "\\colon $0\\to  $1", options: "mA"},
     {trigger: "ceq", replacement: "\\coloneqq", options: "mA"},
     {trigger: ":=", replacement: "\\coloneqq", options: "mA"},
-    {trigger: "!>", replacement: "\\mapsto", options: "mA"},
-    {trigger: "=>", replacement: "\\implies", options: "mA"},
-    {trigger: "=<", replacement: "\\impliedby", options: "mA"},
     {trigger: "xra", replacement: "\\xrightarrow", options: "mA"},
     {trigger: /(\\[a-z]+)\^_/i, replacement: "\\overunderset{$0}{$1}{[[0]]}$2", options: "mA"},
     {trigger: /(\\[a-z]+)\^\^/i, replacement: "\\overset{$0}{[[0]]}$1", options: "mA"},
@@ -131,6 +130,7 @@
     {trigger: "rm", replacement: "\\textrm{$0}", options: "mw"},
     {trigger: "bb", replacement: "\\mathbb{$0}", options: "m"},
     {trigger: "bf", replacement: "\\mathbf{$0}", options: "m"},
+    {trigger: "opn", replacement: "\\operatorname{$0}", options: "mA"},
     {trigger: "cal", replacement: "\\mathcal{$0}", options: "m"},
     {trigger: "LL", replacement: "\\mathcal{L}", options: "mA"},
     {trigger: "HH", replacement: "\\mathcal{H}", options: "mA"},
@@ -143,8 +143,8 @@
     {trigger: "QQ", replacement: "\\mathbb{Q}", options: "mA"},
     {trigger: "BB", replacement: "\\mathcal{B}", options: "mA"},
     {trigger: "PP", replacement: "\\mathcal{P}", options: "mA"},
-    {trigger: /\\\\([A-Za-z]+)/, replacement: "\\cat{[[0]]}", options: "mA"},
-    {trigger: /\$\\\\([A-Za-z]+)/, replacement: "$\\cat{[[0]]}", options: "tA"},
+    {trigger: /\\\\([A-Za-z])/, replacement: "\\cat{[[0]]}", options: "mA"},
+    {trigger: /\$\\\\([A-Za-z])/, replacement: "$\\cat{[[0]]}", options: "tA"},
     {trigger: /(?<!\$)\\\\([A-Za-z])/, replacement: "$\\cat{[[0]]}$", options: "tA"},
     {trigger: /(?<![\$\\])\\([A-Za-z])/, replacement: "$[[0]]$", options: "tA"},
 

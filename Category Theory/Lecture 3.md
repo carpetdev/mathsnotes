@@ -2,7 +2,7 @@ Isomorphisms of categories is too restrictive! E.g. let $\mathbf{Bij}$ be the ca
 
 A functor $F\colon \cat{C}\to \cat{D}$ is an **equivalence** if there exists:
 1. A functor $G\colon \cat{D}\to \cat{C}$
-2. Natural isomorphisms $\eta\colon1_\cat{C}\overset{\cong}{\implies}GF$, $\varepsilon\colon FG \overset{\cong}{\implies}1_\cat{D}$
+2. Natural isomorphisms ${} \eta\colon1_\cat{C}\overset{\cong}{\Longrightarrow}GF {}$, ${} \varepsilon\colon FG \overset{\cong}{\Longrightarrow}1_\cat{D} {}$
 
 Note: $G$ is also an equivalence.
 
@@ -17,7 +17,7 @@ Let $F\colon \cat{C}\to \cat{D}$ be a functor. The following are equivalent:
 Example:
 $U\colon\mathbf{Grp}\to \mathbf{Set}$, $(G,\cdot,1)\mapsto G$. is faithful but not essentially surjective ($\varnothing$ is not a group) or full (arbitrary functions need not be homomorphisms).
 
-Proof of Theorem:
+Proof of theorem:
 $\circled{1}\implies\circled{2}:$ Assume $F\colon \cat{C}\to \cat{D}$ with $G\colon \cat{D}\to \cat{C}$, $\eta\colon 1_\cat{C}\cong GF$, $\varepsilon\colon FG\cong 1_\cat{D}$.
 - Let $Y\in\cat{D}$ and define $X\coloneqq GY$. Then $FX=FGY\overunderset{\cong}{\varepsilon_Y}{\longrightarrow}Y$.
 - Let $X\overunderset{f}{g}{\rightrightarrows}Y \in \cat{C}$ satisfy $Ff=Fg$. Then also $GFf=GFg$. By naturality, $f=\eta_y^{-1}\cdot GFf\cdot \eta_X=\eta_y^{-1}\cdot GFg\cdot \eta_X=g$.
