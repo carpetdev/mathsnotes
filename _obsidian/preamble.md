@@ -18,6 +18,3 @@
 \newcommand{\ra}[1]{\overset{#1}{\longleftarrow}}
 \newcommand{\Ar}[1]{\overset{#1}{\Longrightarrow}}
 \newcommand{\Ra}[1]{\overset{#1}{\Longleftarrow}}
-
-\let\originalcolon\colon
-\renewcommand{\colon}{\mskip2mu\originalcolon}
