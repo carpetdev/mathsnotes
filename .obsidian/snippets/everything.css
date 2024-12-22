@@ -1,3 +1,11 @@
+.red {
+  color: red;
+}
+
+.theme-dark .cm-strong {
+  color: hsl(0,0%,90%);
+}
+
 /* /blacksquare */
 span:has(.mjx-c25FC) {
   float: right;
@@ -6,10 +14,6 @@ span:has(.mjx-c25FC) {
 .block-language-tikz svg {
   zoom: 1.25;
   margin: 10px 0;
-}
-
-.red {
-  color: red;
 }
 
 .theme-dark .pdf-container:has(.textLayer :first-child.endOfContent) canvas {

@@ -16,7 +16,7 @@ P\dar[dashed] \ar[dr, "p_i"]\\
 \displaystyle\prod_{i\in\mathcal{I}}X_i\rar["\pi_i"'] & X_i
 \end{tikzcd}\end{document}
 ```
-- (Equaliser) $\cat{I}=\{\bullet\rightrightarrows\bullet\} {}$. Then $[\cat{I},\cat{C}]$ consists of parallel pairs of maps as objects and commutative diagrams as morphisms. Given $X\overunderset{f}{g}{\rightrightarrows}Y$, there is an object $\Eq(f,g)$ (the **equaliser**) and a map $e\colon \Eq(f,g)\to X$ such that $fe=ge$ and satisfying the following universal property:
+- (Equaliser) $\cat{I}=\{\bullet\rightrightarrows\bullet\} {}$. Then $[\cat{I},\cat{C}]$ consists of parallel pairs of maps as objects and commutative diagrams as morphisms. Given $X\overunderset{f}{g}{\rightrightarrows}Y$, there is an object ${} \eq(f,g) {}$ (the **equaliser**) and a map ${} e\colon \eq(f,g)\to X {}$ such that $fe=ge$ and satisfying the following universal property:
 ```tikz
 \usepackage{tikz-cd, amsmath, amssymb}\begin{document}\begin{tikzcd}[every label/.append style={font=\small}]
 E\dar[dashed, "!"', "u"]\ar[dr, "e'"]\\
@@ -46,7 +46,7 @@ L\rar["\pi_n"]\ar[dr, "\pi_{n-1}"'] & X_n\dar["f_{n-1}"]\\
 \end{tikzcd}\end{document}
 ```
 
-Consider $\mathbf{Set}$. $1=\{*\}$ is the terminal object. Products are given by cartesian products. Equalisers are given by $\Eq(f,g)=\{x\mid f(x)=g(x)\}$. Pullbacks are given by $X\times_ZY=\{(x,y)\mid f(x)=g(y)\}$ for $f\colon X\to Z,\ g\colon Y\to Z$. Limits of towers are sequences where $x_i\in X_i$ and $f_{i-1}(x_i)=x_{i-1}$.
+Consider $\mathbf{Set}$. $1=\{*\}$ is the terminal object. Products are given by cartesian products. Equalisers are given by ${} \eq(f,g)=\{x\mid f(x)=g(x)\} {}$. Pullbacks are given by $X\times_ZY=\{(x,y)\mid f(x)=g(y)\}$ for $f\colon X\to Z,\ g\colon Y\to Z$. Limits of towers are sequences where $x_i\in X_i$ and $f_{i-1}(x_i)=x_{i-1}$.
 
 Given a specific diagram $\cat{I}\overset{F}{\longrightarrow}\cat{C}$ of shape $\cat{I}$ in $\cat{C}$, a limit $L\in \cat{C}$ has a constant functor $\cat{I}\overset{\Delta L}{\longrightarrow}\cat{C}$. The **category of cones over $F$** ($\mathbf{Cones}(F)$) has objects the pairs $(L\in\cat{C},\ \Delta L\overset{\phi}{\Longrightarrow}F)$ and morphisms are maps $L\overset{l}{\longrightarrow}L'$ such that $\phi=\phi'\circ\Delta l$. A **limit of $\cat{I}\overset{F}{\longrightarrow}\cat{C}$** is a terminal object in $\mathbf{Cones}(F)$. This means some $L$ with maps $\pi_i\colon L\to F(i)$ such that for $(L',p)$ another cone, there is a unique map $u$ making the following diagram commute for all  $\alpha \in\cat{I}(i,j)$:
 ```tikz

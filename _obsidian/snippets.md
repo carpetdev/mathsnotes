@@ -10,6 +10,7 @@
     // Obsidian
     {trigger: /(![a-z]+)/, replacement: ">[[[0]]]", options: "t"},
     {trigger: "tikzcd", replacement: "```tikz\n\\usepackage{tikz-cd, amsmath, amssymb}\\begin{document}\\begin{tikzcd}[every label/.append style={font=\\small}]\n$0\n\\end{tikzcd}\\end{document}\n```\n$1", options: "tA"},
+    {trigger: "tikzsq", replacement: "```tikz\n\\usepackage{tikz-cd, amsmath, amssymb}\\begin{document}\\begin{tikzcd}[every label/.append style={font=\\small}]\n${0:FX} \\rar[\"${1:Ff}\"] \\dar[\"${2:\\phi_X}\"'] & ${3:FY} \\dar[\"${4:\\phi_Y}\"]\\\\\n${5:GX} \\rar[\"${6:Gf}\"'] & ${7:GY}\n\\end{tikzcd}\\end{document}\n```", options: "tA"},
     {trigger: "tikzbrace", replacement: "every matrix/.append style={left delimiter=\\{, right delimiter=\\}}", options: "mA"},
     {trigger: "tikznat", replacement: "```tikz\n\\usepackage{tikz-cd, amsmath, amssymb}\\begin{document}\\begin{tikzcd}[every label/.append style={font=\\small}]\n${0:\\mathcal{C}}\\rar[bend left=40, \"${1:F}\", \"\"'{name=U}]\\rar[bend right=40, \"${2:G}\"', \"\"{name=D}] & ${3:\\mathcal{D}}\n\\ar[Rightarrow, from=U, to=D, \"${4:\\phi}\"]\n\\end{tikzcd}\\end{document}\n```", options: "tA"},
     {trigger: "tikzadj", replacement: "```tikz\n\\usepackage{tikz-cd, amsmath, amssymb}\\begin{document}\\begin{tikzcd}[every label/.append style={font=\\small}]\n${0:\\mathcal{C}}\\rar[phantom, \"${1:\\bot}\"]\\rar[shift right=3, \"${2:R}\"'] & ${3:\\mathcal{D}}\\lar[shift right=3, \"${4:L}\"']\n\\end{tikzcd}\\end{document}\n```", options: "tA"},

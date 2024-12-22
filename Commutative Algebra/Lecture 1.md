@@ -1,22 +1,22 @@
-**Subring** of $R$ is $S \subseteq R$ such that $0, 1 \in S$ and $(S,\ +,\ \cdot)$ is a ring. Equivalently, $R$ is an **extension ring** of $S$. We say **subfield** and **field extension** analogously if $R$ and $S$ are fields.
+A **subring** of $R$ is $S \subseteq R$ such that $0, 1 \in S$ and ${} (S,+,\cdot) {}$ is a ring. Equivalently, $R$ is an **extension ring** of $S$. We say **subfield** and **field extension** analogously if $R$ and $S$ are fields.
 
-A **(two-sided) ideal** of $R$ is a subgroup $I\leq R$ such that $ab, ba \in I$ for all $b\in I$. We'll write $I\unlhd R$. It's a **proper** ideal if $I\neq R$. If $R$ is non-commutative, then we consider **one-sided** ideals, but we mostly deal with commutative rings. E.g. **principal ideal** $Ra = (a) = \{ ba:b\in R \}$.
+A **(two-sided) ideal** of $R$ is a subgroup $I\leq R$ such that $ab, ba \in I$ for all $b\in I$. We'll write $I\unlhd R$ or $I\lhd R$. It's a **proper** ideal ($I\nlhd R$) if $I\neq R$. If $R$ is non-commutative, then we consider **one-sided** ideals, but we mostly deal with commutative rings. E.g. **principal ideal** $Ra = (a) = \{ ba:b\in R \}$.
 
-A ring **homomorphism** is a function $f\colon R\to S$ such that $f(a+b)=f(a)+f(b)$, $f(ab) = f(a)f(b)$ and $f(1)=1$. Note: some consider $f(1)=e$, such that $e^2=e$. If ${} f\colon R\to R {}$, it is an **endomorphism**. If $f$ is bijective, it is an **isomorphism**. If $f$ is an endomorphism and isomorphism, it is an **automorphism**. Note: ${} \Ima(f)$ is a subring of the codomain and $\ker(f)$ is an ideal of the domain.
+A ring **homomorphism** is a function $f\colon R\to S$ such that $f(a+b)=f(a)+f(b)$, $f(ab) = f(a)f(b)$ and $f(1)=1$. Note: some consider $f(1)=e$, such that $e^2=e$. If ${} f\colon R\to R {}$, it is an **endomorphism**. If $f$ is bijective, it is an **isomorphism**. If $f$ is an endomorphism and isomorphism, it is an **automorphism**. Note: ${} \im(f) {}$ is a subring of the codomain and $\ker(f)$ is an ideal of the domain.
 
 Remark:
-For every ring $R$, there exists a ring homomorphism $\rho:\mathbb{Z}\to R$, such that $\rho(1_\mathbb{Z})=1_R$, i.e. $$\rho(k) = \begin{cases}
+For every ring $R$, there exists a ring homomorphism ${} \rho\colon\mathbb{Z}\to R {}$, such that $\rho(1_\mathbb{Z})=1_R$, i.e. $$\rho(k) = \begin{cases}
 \underbrace{1+\dots +1}_{k\text{ times}} & k>0 \\
 0 &  k =0 \\
 \underbrace{(-1)+\dots +(-1)}_{-k\text{ times}} & k<0 
 \end{cases}$$
-Then ${} \Ima(f)$ is a commutative subring of $R$, and ${} \ker(f) \lhd \mathbb{Z} {}$, i.e. ${} \ker(f) = n\mathbb{Z} {}$ for some $n\in \mathbb{N}\cup \{ 0 \}$. We define the **characteristic** of $R$ as $\char(R)=n$. E.g. $\char(\mathbb{Z}) = 0 = \char(\mathbb{Q}) = \char(\mathbb{Z}[x])$, $\char(\mathbb{Z}/m) = m$.
+Then $\im(f)$ is a commutative subring of $R$, and ${} \ker(f) \lhd \mathbb{Z}$, i.e. ${} \ker(f) = n\mathbb{Z} {}$ for some $n\in \mathbb{N}\cup \{ 0 \}$. We define the **characteristic** of $R$ as $\char(R)=n$. E.g. $\char(\mathbb{Z}) = 0 = \char(\mathbb{Q}) = \char(\mathbb{Z}[x])$, $\char(\mathbb{Z}/m) = m$.
 
-A **zero divisor** of (a commutative ring) $R$ is $0\neq a\in R$ such that $\exists 0\neq b\in R$ with $ab=0$. $R$ is an **integral domain** (ID) if it has no zero divisors. An **invertible element** of $R$, or a **unit** of $R$, is $u\in R$ such that ${} \exists v\in R {}$ with $uv=1$. We write $R^\times = \{\text{units of }R\}$ (Exercise: this is an abelian group). E.g. a field $F$ is an integral domain and $F^\times=F\setminus \{0\}$.
+A **zero divisor** of (a commutative ring) $R$ is $0\neq a\in R$ such that ${} \exists\ 0\neq b\in R {}$ with $ab=0$. $R$ is an **integral domain** (ID) if it has no zero divisors. An **invertible element** of $R$, or a **unit** of $R$, is $u\in R$ such that ${} \exists v\in R {}$ with $uv=1$. We write $R^\times = \{\text{units of }R\}$ (Exercise: this is an abelian group). E.g. a field $F$ is an integral domain and $F^\times=F\setminus \{0\}$.
 
 Let $a,b\in R$. We say that $a$ divides $b$ if $\exists c\in R$ such that $b=ac$. We write $a\mid b$. Two elements $a, b \in R$ are **associated**, $a\sim b$, if $a\mid b$ and $b \mid a$. E.g. $2\sim-2$ in $\mathbb{Z}$. Exercise: If $R$ is an integral domain, then $a,b\in R$ are associated if and only if $\exists u\in R^\times$ such that $a=ub$. $R$ is a **principal ideal domain** (PID) if $R$ is an ID in which every ideal is principal. Will also see unique factorisation domain (UFD) and Euclidean domain (ED).
 
-An element $a\in R$ is **nilpotent** if $\exists n\in \mathbb{N}$ such that $a^n-0$. We write $\Nil(R) = \{\text{nilpotent elements of }R\}$. $e\in R$ is idempotent if $e^2=e$. E.g. $(1,0)\in \mathbb{Z}\times \mathbb{Z}$, $4\in Z/6$.
+An element $a\in R$ is **nilpotent** if $\exists n\in \mathbb{N}$ such that ${} a^n=0 {}$. We write ${} \nil(R) = \{\text{nilpotent elements of }R\} {}$. $e\in R$ is **idempotent** if $e^2=e$. E.g. $(1,0)\in \mathbb{Z}\times \mathbb{Z}$, $4\in Z/6$.
 
 $I\lhd R$ is a **maximal ideal** if $I\neq R$ and $\forall J\lhd R$ such that $I\subseteq J\subseteq R$ we have $I=J$ or $J=R$. $R$ is called a **local ring** if $R$ has a unique maximal ideal. Fact: every $I\nlhd R$ is contained in some maximal ideal. E.g. if $R$ is a field then $R$ is local with maximal ideal $(0)$.
 

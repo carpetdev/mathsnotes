@@ -30,7 +30,7 @@ and $\cat{I}\ar{F}\cat{C}$ a diagram, there is an adjunction
 Proof:
 $$
 \begin{align}
-\Cones(F)& \ar{R_*} \Cones(RF)\\
+\cones(F)& \ar{R_*} \cones(RF)\\
 (c, \Delta c\Ar{\phi}F)& \longmapsto (Rc, \Delta Rc\Ar{R\phi} RF)\\[2em]
 \Cones(F)& \ra{L_*} \Cones(RF)\\
 \llap{(Ld, \Delta Ld\Ar{L\psi}LRF\Ar{\varepsilon F}F)}& \longleftarrow{\raise{.4pt}{\hspace{-4.5pt}\shortmid} (d, \Delta d\Ar{\psi}RF)}

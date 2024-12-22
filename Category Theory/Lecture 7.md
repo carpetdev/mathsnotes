@@ -24,7 +24,7 @@ X\rar[shift left, "f"]\rar[shift right, "g"'] & Y\rar["q"]\ar[dr, "r"']& \operat
 &&Z
 \end{tikzcd}\end{document}
 ```
-   - In $\mathbf{Set}$, $\Coeq(f,g) = Y/\unsim$ where $\unsim$ is the smallest equivalence relation such that $f(x)\sim g(x)$ for all $x\in X$. $q$ is the quotient map for this equivalence relation.
+   - In $\mathbf{Set}$, ${} \coeq(f,g) = Y/\unsim {}$ where $\unsim$ is the smallest equivalence relation such that $f(x)\sim g(x)$ for all $x\in X$. $q$ is the quotient map for this equivalence relation.
        - For $X\overunderset{1_X}{f}{\rightrightarrows}X$, the equaliser is $\{x\mid x=f(x)\}$ (fixed points) and the coequaliser is the set of orbits of $f$.
 - (Pushout) $\cat{I}=$
 ```tikz

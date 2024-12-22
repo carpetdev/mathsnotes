@@ -99,5 +99,13 @@
       "key": "Z"
     }
   ],
-  "obsidian-editor-shortcuts:joinLines": []
+  "obsidian-editor-shortcuts:joinLines": [],
+  "file-explorer:reveal-active-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ]
 }
