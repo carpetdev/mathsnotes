@@ -16,7 +16,11 @@
 \DeclareMathOperator{\nil}{Nil}
 \DeclareMathOperator{\spec}{Spec}
 \DeclareMathOperator{\mspec}{MaxSpec}
+\DeclareMathOperator{\hom}{Hom}
+\DeclareMathOperator{\ev}{ev}
 \newcommand{\nlhd}{\mathrel{\rlap{\lneq}\raise.22ex{\lhd}}}
+\newcommand{\e}{^\mathrm{e}}
+\newcommand{\c}{^\mathrm{c}}
 
 % Other
 \DeclareMathOperator{\End}{End}

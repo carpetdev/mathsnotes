@@ -105,6 +105,7 @@
     {trigger: "leftra", replacement: "\\leftrightarrow", options: "mA"},
     {trigger: "leftla", replacement: "\\leftleftarrows", options: "mA"},
     {trigger: "rightra", replacement: "\\rightrightarrows", options: "mA"},
+    {trigger: "longlr", replacement: "\\longrightarrow", options: "mA"},
     {trigger: "longra", replacement: "\\longrightarrow", options: "mA"},
     {trigger: "Longra", replacement: "\\Longrightarrow", options: "mA"},
     {trigger: "longla", replacement: "\\longleftarrow", options: "mA"},
