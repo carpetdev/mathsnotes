@@ -45,7 +45,7 @@ A natural transformation between representable functors is **representable** if 
 Lemma (Yoneda):
 Let $F\colon \cat{C}\op\to \mathbf{Set}$ be a presheaf and $X\in\cat{C}$. Then there is a bijection $[\cat{C}\op,\mathbf{Set}](\cat{C}(-,X),F) \cong F(X)$ which is natural in $X\in\cat{C}$ and $F\in[\cat{C}\op,\mathbf{Set}]$.
 
-So presheaves can be canonically built as colimits (gluing) of representable ones.
+Idea: Presheaves can be canonically built as colimits (gluing) of representable ones.
 
 Proposition:
 $\cat{C}(X,-)\colon \cat{C}\to \mathbf{Set}$ preserve limits.
@@ -53,7 +53,7 @@ $\cat{C}(X,-)\colon \cat{C}\to \mathbf{Set}$ preserve limits.
 Proposition:
 $\cat{C}\hookrightarrow[\cat{C}\op,\mathbf{Set}]$, $X\mapsto(\cat{C}(-,X)\colon \cat{C}\op\to \mathbf{Set})$ is a fully faithful functor.
 
-So presheaves can be thought of as "variable sets".
+Idea: Presheaves can be thought of as "variable sets".
 
 A morphism $f\colon X\to Y$ is called **mono** if $fg=fh\implies g=h$ for $W\overunderset{g}{h}{\rightrightarrows}X$.
 

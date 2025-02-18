@@ -153,6 +153,5 @@
     "searchModalRange": "recent",
     "searchModalDvQuery": ""
   },
-  "excludedFiles": [
-  ]
+  "excludedFiles": []
 }

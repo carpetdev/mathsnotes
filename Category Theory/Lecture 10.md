@@ -32,6 +32,6 @@ X \rar["f"'] & Y
 ```
 - !(Bimorphism) A morphism $f$ is bi if it's mono and epi. In $\mathbf{Ring}$, there are bimorphisms which aren't isomorphisms (e.g. $\mathbb{Z}\hookrightarrow\mathbb{Q}$), so this notion is not representable.
 
-The Yoneda embedding preserves limits. It only the colimit of $\cat{D}\ar{F}\cat{C}$ if any functor $\cat{C}\ar{G}\cat{E}$ preserves this colimit.
+The Yoneda embedding preserves limits. It only preserves the colimit of $\cat{D}\ar{F}\cat{C}$ if any functor $\cat{C}\ar{G}\cat{E}$ preserves this colimit.
 
 Arbitrary presheaves can be seen as colimits of representables. This is analogous to the following. Have the embedding $X\hookrightarrow\underline{2}^X=\mathcal{P}(X)$. Arbitrary subsets are like arbitrary presheaves, while singleton subsets are like representable presheaves. We can write $X\supseteq U = \bigsqcup_{x\in U}\{x\}$, which is like a presheaf being a colimit of representables.

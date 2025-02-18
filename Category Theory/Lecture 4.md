@@ -46,6 +46,8 @@ RX & LRX\rar["\varepsilon_X"'] & X
 \end{tikzcd}\end{document}
 ```
 
+Broadly, the first definition lets you do interesting category theory, the second lets you use adjunctions and the third lets you construct them.
+
 Example:
 - (Galois connection) In the setting of partial orders with
 ```tikz

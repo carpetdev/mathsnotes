@@ -15,6 +15,9 @@
     {trigger: "tikznat", replacement: "```tikz\n\\usepackage{tikz-cd, amsmath, amssymb}\\begin{document}\\begin{tikzcd}[every label/.append style={font=\\small}]\n${0:\\mathcal{C}}\\rar[bend left=40, \"${1:F}\", \"\"'{name=U}]\\rar[bend right=40, \"${2:G}\"', \"\"{name=D}] & ${3:\\mathcal{D}}\n\\ar[Rightarrow, from=U, to=D, \"${4:\\phi}\"]\n\\end{tikzcd}\\end{document}\n```", options: "tA"},
     {trigger: "tikzadj", replacement: "```tikz\n\\usepackage{tikz-cd, amsmath, amssymb}\\begin{document}\\begin{tikzcd}[every label/.append style={font=\\small}]\n${0:\\mathcal{C}}\\rar[phantom, \"${1:\\bot}\"]\\rar[shift right=3, \"${2:R}\"'] & ${3:\\mathcal{D}}\\lar[shift right=3, \"${4:L}\"']\n\\end{tikzcd}\\end{document}\n```", options: "tA"},
 
+    // Commands
+    {trigger: "dmo", replacement: "\\DeclareMathOperator{$0}", options: "m"},
+
     // Math mode
     {trigger: "MK", replacement: "$$$0$$$1", options: "tA"},
     {trigger: "mk", replacement: "$$0$", options: "tA"},
@@ -50,7 +53,7 @@
     // Text environment
     {trigger: /txt/, replacement: "\\text{$0}$1", options: "mA"},
     {trigger: "\"", replacement: "\"$0\"$1", options: "mA"},
-    {trigger: "''", replacement: "\"$0\"$1", options: "mA"},
+    // {trigger: "''", replacement: "\"$0\"$1", options: "mA"},
     {trigger: "tss", replacement: "\\textsuperscript", options: "tA"},
 
     // Basic operations
@@ -138,6 +141,7 @@
     {trigger: "HH", replacement: "\\mathcal{H}", options: "mA"},
     {trigger: "CC", replacement: "\\mathbb{C}", options: "mA"},
     {trigger: "RR", replacement: "\\mathbb{R}", options: "mA"},
+    {trigger: "II", replacement: "[0,1]", options: "mA"},
     {trigger: /\\mathbb{R}([\da-z])/i, replacement: "\\mathbb{R}^[[0]]", options: "mA"},
     {trigger: /(?<!\\)S([\da-zA-Z])/, replacement: "S^[[0]]", options: "mA"},
     {trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
@@ -149,7 +153,7 @@
     {trigger: /\\\\([A-Za-z])/, replacement: "\\cat{[[0]]}", options: "mA"},
     {trigger: /\$\\\\([A-Za-z])/, replacement: "$\\cat{[[0]]}", options: "tA"},
     {trigger: /(?<!\$)\\\\([A-Za-z])/, replacement: "$\\cat{[[0]]}$", options: "tA"},
-    {trigger: /(?<![\$\\])\\([A-Za-z])/, replacement: "$[[0]]$", options: "tA"},
+    {trigger: /(?<![\$\\{])\\([A-Za-z])/, replacement: "$[[0]]$", options: "tA"},
 
     // Derivatives and integrals
     {trigger: "par", replacement: "\\frac{\\partial ${0:y}}{\\partial ${1:x}} $2", options: "m"},

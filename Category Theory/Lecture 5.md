@@ -18,7 +18,7 @@ Exercise: Check the other way also gives the identity.
 
 For naturality of $\phi_{X,Y}$, let $x\colon X\to X'$ be a morphism in $\cat{C}$ and $f\colon FX\to Y$ a morphism in $\cat{D}$. Chasing $f$ both ways around $\phi_{X,Y}$'s square for naturality in $X$ gives $X'\overset{\eta_{X'}}{\longrightarrow}UFX'\overset{UFx}{\longrightarrow}UFX\overset{Uf}{\longrightarrow}UY$ and $X'\overset{x}{\longrightarrow}X\overset{\eta_X}{\longrightarrow}UFX\overset{Uf}{\longrightarrow}Y$, which are equal by naturality of $\eta$ on $x$. Exercise: Show naturality in $Y$. //
 
-$\circled{2}\implies\circled{3}:$ Assume $F\colon \cat{C}\to \cat{D}$ is a functor and $\phi_{X,Y}\colon \cat{D}(FX,Y)\to \cat{C}(X,UY)$ are natural bijections. Set $\eta_X\coloneqq\phi_{X,FX}(1_{FX})$ and for $f\colon FX\to Y$ define $f^\#\colon FX\to Y$ by $f^\#\coloneqq \phi_{X,Y}(f)$. Now, $\phi^{-1}_{X,Y}(g)=\phi^{-1}_{X,Y}(g\cdot1_{FX})=Ug\cdot \phi^{-1}_{X,FX}(1_{FX})=Ug\cdot\eta$, which is the universal property. //
+$\circled{2}\implies\circled{3}:$ Assume $F\colon \cat{C}\to \cat{D}$ is a functor and $\phi_{X,Y}\colon \cat{D}(FX,Y)\to \cat{C}(X,UY)$ are natural bijections. Set $\eta_X\coloneqq\phi_{X,FX}(1_{FX})$ and for ${} f\colon X\to UY {}$ define $f^\#\colon FX\to Y$ by ${} f^\#\coloneqq \phi^{-1}_{X,Y}(f) {}$. Now, $\phi^{-1}_{X,Y}(g)=\phi^{-1}_{X,Y}(g\cdot1_{FX})=Ug\cdot \phi^{-1}_{X,FX}(1_{FX})=Ug\cdot\eta$, which is the universal property. //
 
 $\circled{3}\implies\circled{1}:$ Now assume $X\mapsto FX$ and $\eta_X\colon X\to UFX$ which is universal. First extend $F$ to a functor: Let $f\colon X\to Y$ be a morphism in $\cat{C}$ and define $Ff=f^\#$. Then uniqueness in the universal property gives functoriality. Note this also gives naturality of $\eta$.
 ```tikz

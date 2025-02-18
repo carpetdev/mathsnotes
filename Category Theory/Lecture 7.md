@@ -1,4 +1,4 @@
-The **colimit** of $\cat{I}\overset{F}{\longrightarrow}\cat{C}$ is the limit of $\cat{C}\op\overset{F\op}{\longrightarrow}\cat{D}\op$. $\cat{C}$ has all **colimits of shape $\cat{I}$** if $\cat{C}\overset{\Delta}{\longrightarrow}\cat{C}^\cat{I}$ has a left adjoint. Note an adjunction
+The **colimit** of $\cat{I}\overset{F}{\longrightarrow}\cat{C}$ is the limit of ${} \cat{I}\op\overset{F\op}{\longrightarrow}\cat{C}\op {}$. $\cat{C}$ has all **colimits of shape $\cat{I}$** if $\cat{C}\overset{\Delta}{\longrightarrow}\cat{C}^\cat{I}$ has a left adjoint. Note an adjunction
 ```tikz
 \usepackage{tikz-cd, amsmath, amssymb}\begin{document}\begin{tikzcd}[every label/.append style={font=\small}, column sep=large]
 \mathcal{D}\rar[phantom, "\bot^\eta_\varepsilon"]\rar[bend right, "U"'] & \mathcal{C}\lar[bend right, "F"']
