@@ -139,6 +139,7 @@
     {trigger: "CC", replacement: "\\mathbb{C}", options: "mA"},
     {trigger: "RR", replacement: "\\mathbb{R}", options: "mA"},
     {trigger: /\\mathbb{R}([\da-z])/i, replacement: "\\mathbb{R}^[[0]]", options: "mA"},
+    {trigger: /(?<!\\)S([\da-zA-Z])/, replacement: "S^[[0]]", options: "mA"},
     {trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
     {trigger: /\\mathbb{Z}([+-])/, replacement: "\\mathbb{Z}^[[0]]", options: "mA"},
     {trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},

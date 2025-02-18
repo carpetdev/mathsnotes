@@ -22,9 +22,17 @@
 \newcommand{\e}{^\mathrm{e}}
 \newcommand{\c}{^\mathrm{c}}
 
-% Other
+% Linear Algebra
 \DeclareMathOperator{\End}{End}
 \DeclareMathOperator{\gl}{GL}
+\DeclareMathOperator{\sl}{SL}
+\DeclareMathOperator{\o}{O}
+\DeclareMathOperator{\so}{SO}
+\DeclareMathOperator{\u}{U}
+\DeclareMathOperator{\su}{SU}
+\DeclareMathOperator{\lin}{Lin}
+\newcommand{\tran}{^\top}
+\newcommand{\id}{\mathrm{Id}}
 
 % General
 \newcommand{\qea}{\unicode{x21AF}}

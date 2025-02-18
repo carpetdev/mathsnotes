@@ -6,7 +6,7 @@ For some $a\in R$ where $a\neq 0$ and $a\notin R^\times$, and $b,c\in R$, $a$ is
 - **irreducible** if $a=bc$ implies $a\sim b$ or $a\sim c$
 - **prime** if $a\mid bc$ implies $a\mid b$ or $a\mid c$.
 
-Prime implies irreducible but the converse only holds e.g. in a UFD (ID where all nonzero non-invertible elements have factorisations into irreducibles that are unique up to order and associates).
+Prime implies irreducible but the converse only holds e.g. in a UFD (ID where all non-zero non-invertible elements have factorisations into irreducibles that are unique up to order and associates).
 
 An ideal $I\lhd R$ is **prime** if $I\neq R$ and $ab\in I$ then $a\in I$ or $b\in I$.
 
