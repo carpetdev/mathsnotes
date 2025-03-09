@@ -9,9 +9,9 @@ Example:
 - Triangular group, upper triangular group
 - Any intersection of the above
 
-$\so(2)=\{\text{2x2 matrices }A \mid AA\tran =\id,\,\det(A)=1\}$. This is specifically matrices of the form $\begin{pmatrix}\cos\phi& -\sin\phi\\ \sin\phi& \cos\phi\end{pmatrix}$. As a smooth manifold, $\so(2)$ is a circle.
+${} \so(2)=\{\text{2x2 matrices }A \mid AA\tran =\Id,\,\det(A)=1\} {}$. This is specifically matrices of the form $\begin{pmatrix}\cos\phi& -\sin\phi\\ \sin\phi& \cos\phi\end{pmatrix}$. As a smooth manifold, $\so(2)$ is a circle.
 
-$\o(2) = \{\text{2x2 matrices }A \mid AA\tran =\id\}$ is matrices of the form $\begin{pmatrix}\cos\phi &\mp\sin\phi\\ \sin\phi& \pm\cos\phi\end{pmatrix}$ is a disjoint union of two circles.
+${} \o(2) = \{\text{2x2 matrices }A \mid AA\tran =\Id\} {}$ is matrices of the form $\begin{pmatrix}\cos\phi &\mp\sin\phi\\ \sin\phi& \pm\cos\phi\end{pmatrix}$ is a disjoint union of two circles.
 
 ${} \sl(2,\mathbb{R}) = \left\{A=\begin{pmatrix}a&b\\ c&d\end{pmatrix} \Biggm| \det A = ad-bc = 1\right\} {}$ is a second order hypersurface in $\mathbb{R}^4$.
 
@@ -21,7 +21,7 @@ $\sl(2,\mathbb{R})$ is three-dimensional and diffeomorphic to $S^1\times\mathbb{
 Proof Sketch:
 Change variables to $a=x+y,\ d=x-y,\ b=u+v,\ c=u-v$ so that $ad-bc=x^2-y^2-u^2+v^2=1$. If $(y,u)\in\mathbb{R}^2$, then $(x,v)$ is in a circle of radius defined by the equation. Remains to check that the fibre bundle is trivial.
 
-$\u(2)=\left\{A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\Biggm| a,b,c,d\in \mathbb{C},\ AA^\dagger=\id \right\}$.
+${} \u(2)=\left\{A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\Biggm| a,b,c,d\in \mathbb{C},\ AA^\dagger=\Id \right\} {}$.
 
 Proposition:
 $\su(2)$ is three-dimensional and diffeomorphic to $S^3$. $\u(2)$ is four-dimensional and diffeomorphic to $S^3\times S^1$.

@@ -28,6 +28,7 @@
     {trigger: "@a", replacement: "\\alpha", options: "mA"},
     {trigger: "@b", replacement: "\\beta", options: "mA"},
     {trigger: "@g", replacement: "\\gamma", options: "mA"},
+    {trigger: "@y", replacement: "\\gamma", options: "mA"},
     {trigger: "@G", replacement: "\\Gamma", options: "mA"},
     {trigger: "@d", replacement: "\\delta", options: "mA"},
     {trigger: "@D", replacement: "\\Delta", options: "mA"},
@@ -65,7 +66,7 @@
     // More operations
     {trigger: "([a-zA-Z])hat", replacement: "\\hat{[[0]]}", options: "rm"},
     {trigger: "([a-zA-Z])bar", replacement: "\\bar{[[0]]}", options: "rm"},
-    {trigger: "([a-zA-Z])dot", replacement: "\\dot{[[0]]}", options: "rm", priority: -1},
+    {trigger: "((?!c)[a-zA-Z])dot", replacement: "\\dot{[[0]]}", options: "rm", priority: -1},
     {trigger: "([a-zA-Z])ddot", replacement: "\\ddot{[[0]]}", options: "rm", priority: 1},
     {trigger: "([a-z])tilde", replacement: "\\tilde{[[0]]}", options: "rm"},
     {trigger: "([A-Z])tilde", replacement: "\\widetilde{[[0]]}", options: "rm"},
@@ -213,7 +214,8 @@
     {trigger: "lr{", replacement: "\\left\\{ $0 \\right\\} $1", options: "mA"},
     {trigger: "lr[", replacement: "\\left[ $0 \\right] $1", options: "mA"},
     {trigger: "lr|", replacement: "\\left| $0 \\right| $1", options: "mA"},
-    {trigger: "lra", replacement: "\\left< $0 \\right> $1", options: "mA"},
+    {trigger: "lra", replacement: "\\langle $0 \\rangle $1", options: "mA"},
+    {trigger: "lr<", replacement: "\\left< $0 \\right> $1", options: "mA"},
     {trigger: "lr.", replacement: "\\left. $0 \\right|$1", options: "mA"},
 
 

@@ -154,6 +154,13 @@
       ],
       "tokenMatcher": "escape_hmd-escape-char",
       "jumpAfter": true
+    },
+    {
+      "lookups": [
+        ")"
+      ],
+      "tokenMatcher": "formatting_formatting-strong_strong",
+      "jumpAfter": true
     }
   ]
 }

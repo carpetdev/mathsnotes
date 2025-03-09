@@ -32,7 +32,9 @@
 \DeclareMathOperator{\su}{SU}
 \DeclareMathOperator{\lin}{Lin}
 \newcommand{\tran}{^\top}
-\newcommand{\id}{\mathrm{Id}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\Id}{\mathrm{Id}}
+\newcommand{\mat}[2]{\mathrm{M}_{#1\times #1}(#2)}
 
 % General
 \newcommand{\qea}{\unicode{x21AF}}
