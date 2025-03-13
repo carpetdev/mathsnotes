@@ -75,11 +75,13 @@
 
     // Auto letter subscript
     {trigger: /([A-Za-z])(\d)/, replacement: "[[0]]_[[1]]", options: "mA", priority: -1},
+    {trigger: /(x)([m1-9])/, replacement: "[[0]]^[[1]]", options: "mA"},
     {trigger: /([A-Za-z])_(\d\d)/, replacement: "[[0]]_{[[1]]}", options: "mA"},
     {trigger: /\\hat{([A-Za-z])}(\d)/, replacement: "\\hat{[[0]]}_[[1]]", options: "rmA"},
     {trigger: /\\vec{([A-Za-z])}(\d)/, replacement: "\\vec{[[0]]}_[[1]]", options: "rmA"},
     {trigger: /\\mathbf{([A-Za-z])}(\d)/, replacement: "\\mathbf{[[0]]}_[[1]]", options: "rmA"},
 
+    {trigger: "\phit", replacement: "\phi^t", options: "mA"},
     {trigger: "xnn", replacement: "x_n", options: "mA"},
     {trigger: "xii", replacement: "x_i", options: "mA"},
     {trigger: "xjj", replacement: "x_j", options: "mA"},
@@ -216,7 +218,7 @@
     {trigger: "lr|", replacement: "\\left| $0 \\right| $1", options: "mA"},
     {trigger: "lra", replacement: "\\langle $0 \\rangle $1", options: "mA"},
     {trigger: "lr<", replacement: "\\left< $0 \\right> $1", options: "mA"},
-    {trigger: "lr.", replacement: "\\left. $0 \\right|$1", options: "mA"},
+    {trigger: "lr.", replacement: "\\left. $0 \\right|_{$1}", options: "mA"},
 
 
     // Misc
