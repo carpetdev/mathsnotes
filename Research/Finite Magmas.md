@@ -1,0 +1,1 @@
+- Counted in [[Turecek - Counting Finite Magmas.pdf]] and Andreas Distler PhD

@@ -1,0 +1,1 @@
+Characters from magmas to fields are linearly independent (factor through semigroup/abelian group?). Can we change field to division ring (actually do we need divsion even?)
