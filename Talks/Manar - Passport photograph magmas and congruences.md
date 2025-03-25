@@ -1,5 +1,4 @@
-# Passport photograph magmas and congruences
-## Construction of passport photograph magmas
+# Construction of passport photograph magmas
 - Pictures represented by an element of $\mathcal{P}([0,1]\times[0,1])$ (black and white pictures)
 - A magma is a pair consisting of a set with closed binary operation
 - Here we use a stack-shrink operation:
@@ -15,7 +14,7 @@
 
 - Proposition: The pair $M=(\mathcal{P}([0,1]^2), \boxtimes)$ is a magma
 - We have a generalisation to $[0,1]^d$
-## Examples of submagmas
+# Examples of submagmas
 - Checking if subsets are closed under composition
 - Proposition: The pair $(\mathcal{P}([0,1]\times[0,1), \boxtimes)$ is a submagma
 - Let $(f)=\{(f(y),y)\mid y\in[0,1]\}$, $\operatorname{PL}(0,1) = \{\text{piecewise linear functions from }[0,1]\text{ to }[0,1]\}$
@@ -24,7 +23,7 @@
 - Proposition: $(L_2,\boxtimes)$ is a submagma (braid-like submagma with single string)
 - $B_2=\{(f)\cup(g)\mid f,g \in \operatorname{PL}(0,1),\ f(0)=f(1)=1/3,\ g(0)=g(1)=2/3,\ g(y)>f(y)\ \forall y \in[0,1]\}$ is two strings
 - In dimension two we recover the familiar case
-## Magma congruences and quotient magmas
+# Magma congruences and quotient magmas
 - Let $a,b,a',b'\in\mathcal{P}([0,1]^2)$. Then a **magma congruence** on $M$ is an equivalence relation such that $a\sim a'$ and $b\sim b'$ $\implies a\boxtimes b \sim a'\boxtimes b'$
 - Note $(a\boxtimes b)\boxtimes c \neq a\boxtimes (b\boxtimes c)$, but we can relate the two with the function $$x\mapsto\begin{cases}
 x/2 & 0\leq x\leq 1/2 \\

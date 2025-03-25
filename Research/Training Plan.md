@@ -10,4 +10,6 @@ representation theory
 topology
 cat theory - adjunctions (formal stuff) - algebra (constructive stuff)
 
-seminars go into the above
+seminars, conferences go into the above
+
+PGR Academic integrity
