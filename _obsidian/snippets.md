@@ -6,6 +6,7 @@
     // Stenography
     {trigger: /(${morphism_prefix})m/i, replacement: "[[0]]morphism", options: "tA"},
     {trigger: /(${morphism_prefix})c/i, replacement: "[[0]]morphic", options: "tA"},
+    {trigger: /(n)bhd/i, replacement: "[[0]]eighbourhood", options: "tA"},
 
     // Obsidian
     {trigger: /(![a-z]+)/, replacement: ">[[[0]]]", options: "t"},

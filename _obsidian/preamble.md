@@ -24,7 +24,7 @@
 
 % Linear Algebra
 \DeclareMathOperator{\End}{End}
-\DeclareMathOperator{\gl}{GL}
+\DeclareMathOperator{\GL}{GL}
 \DeclareMathOperator{\sl}{SL}
 \DeclareMathOperator{\o}{O}
 \DeclareMathOperator{\so}{SO}
@@ -34,7 +34,7 @@
 \newcommand{\tran}{^\top}
 \newcommand{\id}{\mathrm{id}}
 \newcommand{\Id}{\mathrm{Id}}
-\newcommand{\mat}[2]{\mathrm{M}_{#1\times #1}(#2)}
+\newcommand{\mat}[2]{\mathrm{M}\_{#1\times #1}(#2)}
 
 % General
 \newcommand{\qea}{\unicode{x21AF}}
