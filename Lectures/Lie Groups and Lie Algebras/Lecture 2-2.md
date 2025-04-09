@@ -31,6 +31,25 @@ Proof:
 Set $L=\bigcup_{k\geq 1}U^k$. Want to show $L=G_0$. $L$ is open as the union of open sets and closed as $a\in G\setminus L$ has the neighbourhood $aU^{-1}$ which is disjoint from $L$. $L$ is connected since any product has a path to $e$ as the product of paths of its factors to $e$. $\blacksquare$
 
 An **algebraic linear group** $G$ is a subgroup in $\GL(n,\mathbb{R})$ which is defined by a system of polynomial equations $$\begin{gather}
-p_1(a_{11},a_{12},\dots,a_{1n})=0\\ \vdots\\ p_m(a_{m1},a_{m2},\dots,a_{mn})=0
+p_1(a_{11},a_{12},\dots,a_{nn})=0\\ \vdots\\ p_m(a_{11},a_{12},\dots,a_{nn})=0
 \end{gather}$$
-where
+where $a_{ij}$ are matrix components of $A\in\GL(n,\mathbb{R})$. Also works for $\mathbb{C}$.
+
+Example:
+- $\sl(n,\mathbb{R})$ is given by $\det A = 1$
+- $\o(n)$ is given by $n(n+1)/2$ equations; $\so(n)$ has one additional equation
+- The upper triangular group is given by $n(n-1)/2$ equations of the form $a_{ij}=0$
+
+Theorem:
+Any algebraic linear group $G$ is a Lie subgroup in $\GL(n,\mathbb{R})$. In particular, $G$ is a Lie group.
+
+Proof Sketch:
+The main statement is that $G$ is a smooth submanifold. We need to explain why singular points don't appear in this setting. The reason is *homogeneity*, i.e. any subgroup of $GL(n,\mathbb{R})$ has the same smooth structure at each of its points. More precisely, take a neighbourhood of $e$ in $G$ as $U_e=G\cap V\subseteq G$, where $V$ is a certain neighbourhood of $e\in GL(n,\mathbb{R})$. Then for any other point $x\in G$, we can consider its neighbourhood $U_x$ obtained by left translation: $U_x=x\cdot(G\cap V)=G\cap(x\cdot V)$, a diffeomorphism. For algebraic submanifolds, almost all points are non-singular, so we must have that all point are non-singular in this case due to homogeneity.
+
+This theorem is implied by the following two theorems.
+
+Theorem (Cartan):
+Any closed subgroup of a Lie group is a smooth submanifold and, therefore, a Lie subgroup.
+
+Theorem (A. Skopenkov):
+Let $M\subseteq\mathbb{R}^n$ be a closed subset satisfying the following homogeneity condition: for any two points $a,b\in M$, there are neighbourhoods $U_a,U_b\subseteq\mathbb{R}^n$ and a diffeomorphism $F$ sending $U_a$ onto $U_b$ such that $F(U_a\cap M)=U_b\cap M$ and $F(a)=b$. Then $M$ is a smooth submanifold in $\mathbb{R}^n$.

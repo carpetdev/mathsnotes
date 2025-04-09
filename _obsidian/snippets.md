@@ -7,6 +7,7 @@
     {trigger: /(${morphism_prefix})m/i, replacement: "[[0]]morphism", options: "tA"},
     {trigger: /(${morphism_prefix})c/i, replacement: "[[0]]morphic", options: "tA"},
     {trigger: /(n)bhd/i, replacement: "[[0]]eighbourhood", options: "tA"},
+    {trigger: /(m)fd/i, replacement: "[[0]]anifold", options: "tA"},
 
     // Obsidian
     {trigger: /(![a-z]+)/, replacement: ">[[[0]]]", options: "t"},
@@ -61,7 +62,7 @@
     // Basic operations
     {trigger: "sr", replacement: "^2", options: "mA"},
     {trigger: "cb", replacement: "^3", options: "mA"},
-    {trigger: "//", replacement: "\\frac{$0}{$1}$2", options: "mA"},
+    {trigger: "//", replacement: "\\frac{$0}{$1}", options: "mA"},
     {trigger: "invs", replacement: "^{-1}", options: "mA"},
 
     // More operations
@@ -75,7 +76,7 @@
     {trigger: "([a-zA-Z])vec", replacement: "\\vec{[[0]]}", options: "rm"},
 
     // Auto letter subscript
-    {trigger: /([A-Za-z])(\d)/, replacement: "[[0]]_[[1]]", options: "mA", priority: -1},
+    {trigger: /(\s[A-Za-z]+)(\d)/, replacement: "[[0]]_[[1]]", options: "mA", priority: -1},
     {trigger: /(x)([m1-9])/, replacement: "[[0]]^[[1]]", options: "mA"},
     {trigger: /([A-Za-z])_(\d\d)/, replacement: "[[0]]_{[[1]]}", options: "mA"},
     {trigger: /\\hat{([A-Za-z])}(\d)/, replacement: "\\hat{[[0]]}_[[1]]", options: "rmA"},
