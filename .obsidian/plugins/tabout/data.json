@@ -161,6 +161,13 @@
       ],
       "tokenMatcher": "formatting_formatting-strong_strong",
       "jumpAfter": true
+    },
+    {
+      "lookups": [
+        "."
+      ],
+      "tokenMatcher": "Document",
+      "jumpAfter": true
     }
   ]
 }
