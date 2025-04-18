@@ -24,17 +24,23 @@
 
 % Linear Algebra
 \DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Diff}{Diff}
 \DeclareMathOperator{\GL}{GL}
-\DeclareMathOperator{\sl}{SL}
-\DeclareMathOperator{\o}{O}
-\DeclareMathOperator{\so}{SO}
-\DeclareMathOperator{\u}{U}
-\DeclareMathOperator{\su}{SU}
+\DeclareMathOperator{\gl}{\mathfrak{gl}}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\sl}{\mathfrak{sl}}
+\DeclareMathOperator{\O}{O}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\so}{\mathfrak{so}}
+\DeclareMathOperator{\U}{U}
+\DeclareMathOperator{\SU}{SU}
 \DeclareMathOperator{\lin}{Lin}
+\DeclareMathOperator{\Ad}{Ad}
+\DeclareMathOperator{\tr}{tr}
 \newcommand{\tran}{^\top}
 \newcommand{\id}{\mathrm{id}}
 \newcommand{\Id}{\mathrm{Id}}
-\newcommand{\mat}[2]{\mathrm{M}\_{#1\times #1}(#2)}
+\newcommand{\mat}[1]{\mathrm{M}_{#1\times #1}}
 
 % General
 \newcommand{\qea}{\unicode{x21AF}}

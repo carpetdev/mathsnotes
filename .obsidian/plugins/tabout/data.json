@@ -129,20 +129,8 @@
     },
     {
       "lookups": [
-        ")"
-      ],
-      "tokenMatcher": "formatting_formatting-math_formatting-math-end_keyword_math_math-",
-      "jumpAfter": true
-    },
-    {
-      "lookups": [
-        ":"
-      ],
-      "tokenMatcher": "formatting_formatting-math_formatting-math-end_keyword_math_math-",
-      "jumpAfter": true
-    },
-    {
-      "lookups": [
+        ")",
+        ":",
         "**"
       ],
       "tokenMatcher": "formatting_formatting-math_formatting-math-end_keyword_math_math-",

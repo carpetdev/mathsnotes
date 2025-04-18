@@ -3,7 +3,7 @@
 }
 
 .theme-dark .cm-strong {
-  color: hsl(0,0%,90%);
+  color: hsl(0, 0%, 90%);
 }
 
 /* /blacksquare */
@@ -27,4 +27,9 @@ span:has(.mjx-c25FC) {
 /* Vim cursor blinking off */
 .cm-cursorLayer {
   animation: none !important;
+}
+
+td,
+th {
+  border-color: yellow !important;
 }

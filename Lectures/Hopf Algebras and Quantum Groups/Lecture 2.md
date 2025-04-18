@@ -18,7 +18,7 @@ A\otimes A\rar["m"'] & A & A\otimes A\lar["m"]
 
 Example:
 - $\mathbb{C}$ is an algebra over $\mathbb{C}$. The multiplication map is the same as the isomorphism $\mathbb{C}\otimes \mathbb{C}\to \mathbb{C}$, and the unit is the identity map $\mathbb{C}\to\mathbb{C}$.
-- For any vector space $V$, the space $\End(V)$ is an algebra with $fg\coloneqq f\circ g$ and $1_{\End(V)}=\id_V$. If $\dim V =n < \infty$, $\End(V)$ is isomorphic to $\mat{n}{\mathbb{C}}$. If $\dim V = \infty$, then $\End(V)$ is too large and extremely difficult to describe.
+- For any vector space $V$, the space $\End(V)$ is an algebra with $fg\coloneqq f\circ g$ and $1_{\End(V)}=\id_V$. If $\dim V =n < \infty$, $\End(V)$ is isomorphic to ${} \mat{n}(\mathbb{C}) {}$. If $\dim V = \infty$, then $\End(V)$ is too large and extremely difficult to describe.
 
 # Constructing algebras
 ## Approach 1 (Define multiplication on a basis):

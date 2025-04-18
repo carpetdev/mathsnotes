@@ -1,6 +1,6 @@
 # Lie algebras and associated algebras
 - Lie algebra is a vector space $\mathfrak{g}$ with a binary operation $[\cdot,\cdot]\colon \mathfrak{g}\times\mathfrak{g}\to \mathfrak{g}$ which is alternating, bilinear but not necessarily associative. Instead it satisfies the Jacobi identity: $[X,[Y,Z]] + [Y,[Z,X]] + [Z,[X,Y]] = 0$
-- $\mathfrak{g} = \mat{n}{\mathbb{C}}$ and the commutator bracket forms a Lie algebra
+- ${} \mathfrak{g} = \mat{n}(\mathbb{C}) {}$ and the commutator bracket forms a Lie algebra
     - Example: $\mathfrak{sl}_2$ is the vector space of traceless 2x2 matrices (i.e. of the form $(a, b; c, -a)$) with commutator bracket is our favourite. This is a 3-dimensional space with basis $E=(0, 1; 0, 0)$, $F=(0, 0; 1, 0)$, $H=(1, 0; 0, -1)$
 - For a vector space $V$, $\mathfrak{gl}(V) = (\End(V), [\cdot,\cdot])$ with the commutator bracket (choosing a basis). A Lie algebra representation is a homomorphism $\rho\colon \mathfrak{g}\to \mathfrak{gl}(V)$
     - Have $\mathfrak{sl}_2\to \mathfrak{gl}_2$ where the basis elements go to their matrix representations

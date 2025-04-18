@@ -8,7 +8,7 @@ $z^k=x^k+y^k+\sum_{i,j}b_{ij}^kx^iy^j+\cdots$ (terms of degree $\geq 3$). Simila
 Proof:
 In general, the Taylor expansion of an arbitrary smooth function can be written with summation convention as $z^k=a_0+l_jx^j+m_jy^j+a_{ij}x^ix^j+b_{ij}x^iy^j+c_{ij}y^iy^j+\cdots$. To find coefficients, we set $x=e$ to get $y^k=a_0+m_jy^j+c_{ij}y^iy^j+\cdots$. Thus, $a_0=0,\ c_{ij}=0,\ m_j = \delta_{kj}$. Similar for $y=e$ shows that $a_{ij}=0, l_j=\delta_{kj}$. $\blacksquare$
 
-Any smooth manifold $M$ can be presented as a disjoint union of connected (equivalently, path-connected) manifolds called **connected components** of $M$. Let $G$ be a Lie group, and $G=G_0\cup G_1\cup\dots$ be the decomposiiton into connected components with $G_0$ the connected component of the identity $e$.
+Any smooth manifold $M$ can be presented as a disjoint union of connected (equivalently, path connected) manifolds called **connected components** of $M$. Let $G$ be a Lie group, and $G=G_0\cup G_1\cup\dots$ be the decomposiiton into connected components with $G_0$ the connected component of the identity $e$.
 
 Theorem:
 
@@ -36,15 +36,16 @@ p_1(a_{11},a_{12},\dots,a_{nn})=0\\ \vdots\\ p_m(a_{11},a_{12},\dots,a_{nn})=0
 where $a_{ij}$ are matrix components of $A\in\GL(n,\mathbb{R})$. Also works for $\mathbb{C}$.
 
 Example:
-- $\sl(n,\mathbb{R})$ is given by $\det A = 1$
-- $\o(n)$ is given by $n(n+1)/2$ equations; $\so(n)$ has one additional equation
+
+- $\SL(n,\mathbb{R})$ is given by $\det A = 1$
+- $\O(n)$ is given by $n(n+1)/2$ equations; $\SO(n)$ has one additional equation
 - The upper triangular group is given by $n(n-1)/2$ equations of the form $a_{ij}=0$
 
 Theorem:
 Any algebraic linear group $G$ is a Lie subgroup in $\GL(n,\mathbb{R})$. In particular, $G$ is a Lie group.
 
 Proof Sketch:
-The main statement is that $G$ is a smooth submanifold. We need to explain why singular points don't appear in this setting. The reason is *homogeneity*, i.e. any subgroup of $GL(n,\mathbb{R})$ has the same smooth structure at each of its points. More precisely, take a neighbourhood of $e$ in $G$ as $U_e=G\cap V\subseteq G$, where $V$ is a certain neighbourhood of $e\in GL(n,\mathbb{R})$. Then for any other point $x\in G$, we can consider its neighbourhood $U_x$ obtained by left translation: $U_x=x\cdot(G\cap V)=G\cap(x\cdot V)$, a diffeomorphism. For algebraic submanifolds, almost all points are non-singular, so we must have that all point are non-singular in this case due to homogeneity.
+The main statement is that $G$ is a smooth submanifold. We need to explain why singular points don't appear in this setting. The reason is _homogeneity_, i.e. any subgroup of $GL(n,\mathbb{R})$ has the same smooth structure at each of its points. More precisely, take a neighbourhood of $e$ in $G$ as $U_e=G\cap V\subseteq G$, where $V$ is a certain neighbourhood of $e\in GL(n,\mathbb{R})$. Then for any other point $x\in G$, we can consider its neighbourhood $U_x$ obtained by left translation: $U_x=x\cdot(G\cap V)=G\cap(x\cdot V)$, a diffeomorphism. For algebraic submanifolds, almost all points are non-singular, so we must have that all point are non-singular in this case due to homogeneity.
 
 This theorem is implied by the following two theorems.
 

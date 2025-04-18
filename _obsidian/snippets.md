@@ -66,7 +66,7 @@
     {trigger: "invs", replacement: "^{-1}", options: "mA"},
 
     // More operations
-    {trigger: "([a-zA-Z])hat", replacement: "\\hat{[[0]]}", options: "rm"},
+    {trigger: "([a-zA-Z])hat", replacement: "\\hat{[[0]]}", options: "rmA"},
     {trigger: "([a-zA-Z])bar", replacement: "\\bar{[[0]]}", options: "rm"},
     {trigger: "((?!c)[a-zA-Z])dot", replacement: "\\dot{[[0]]}", options: "rm", priority: -1},
     {trigger: "([a-zA-Z])ddot", replacement: "\\ddot{[[0]]}", options: "rm", priority: 1},
@@ -148,6 +148,7 @@
     {trigger: "CC", replacement: "\\mathbb{C}", options: "mA"},
     {trigger: "RR", replacement: "\\mathbb{R}", options: "mA"},
     {trigger: "II", replacement: "[0,1]", options: "mA"},
+    {trigger: /([gh]){2}/, replacement: "\\mathfrak{[[0]]}", options: "mA"},
     {trigger: /\\mathbb{R}([\da-z])/i, replacement: "\\mathbb{R}^[[0]]", options: "mA"},
     {trigger: /(?<!\\)S([\da-z])/, replacement: "S^[[0]]", options: "mA"},
     {trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
@@ -163,8 +164,10 @@
 
     // Derivatives and integrals
     {trigger: "par", replacement: "\\frac{\\partial ${0:y}}{\\partial ${1:x}} $2", options: "m"},
+    {trigger: /par([\dni])/, replacement: "\\frac{\\partial}{\\partial x^[[0]]}", options: "rmA"},
     {trigger: /pa([A-Za-z])([A-Za-z])/, replacement: "\\frac{\\partial [[0]]}{\\partial [[1]]} ", options: "rm"},
-    {trigger: "ddt", replacement: "\\frac{d}{dt} ", options: "mA"},
+    {trigger: /dd([xst])/, replacement: "\\frac{d}{d[[0]]} ", options: "rmA"},
+    {trigger: /(\\frac{d}{d([xst])})0/, replacement: "\\left.[[0]]\\right|_{[[1]]=0}", options: "rmA"},
 
     {trigger: "int", replacement: "\\int $0 \\, d${1:x} $2", options: "m"},
     {trigger: "dint", replacement: "\\int_{${0:0}}^{${1:1}} $2 \\, d${3:x} $4", options: "m"},

@@ -14,7 +14,7 @@
     - For $\operatorname{SIM}(X)$, we can identitfy $E$ with $(\mathbb{P}(X), \cap)$. Have a partial order ${} e\leq f \iff ef=e {}$
     - For $\mathcal{P}_X$ we get $\{\alpha\alpha^{-1} \mid \alpha\in X^*\}\cup\{0\}$. Have partial order from prefixes
 - $F$ field, $S$ inverse semigroup with $0$, $FS$ semigroup algebra, $F_0S$ contracted semigroup algebra (quotient out the zeros)
-    - $S = B_X$, $|X|=n$, $F_0S=\mat{n}{F}$ simple
+    - $S = B_X$, $|X|=n$, ${} F_0S=\mat{n}(F) {}$ simple
 - When is $F_0S$ simple?
 - $F_0S$ simple ${} \implies {}$ $S$ shouldn't have any quotients (i.e. is congruence-free). The converse is not true
 - If $|X|\geq 2$, $\mathcal{P}_X$ is congruence-free.

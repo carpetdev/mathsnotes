@@ -10,25 +10,25 @@ Example:
 - Triangular group, upper triangular group
 - Any intersection of the above
 
-${} \so(2)=\{\text{2x2 matrices }A \mid AA\tran =\Id,\,\det(A)=1\} {}$. This is specifically matrices of the form $\begin{pmatrix}\cos\phi& -\sin\phi\\ \sin\phi& \cos\phi\end{pmatrix}$. As a smooth manifold, $\so(2)$ is a circle.
+${} \SO(2)=\{\text{2x2 matrices }A \mid AA\tran =\Id,\,\det(A)=1\} {}$. This is specifically matrices of the form $\begin{pmatrix}\cos\phi& -\sin\phi\\ \sin\phi& \cos\phi\end{pmatrix}$. As a smooth manifold, $\SO(2)$ is a circle.
 
-${} \o(2) = \{\text{2x2 matrices }A \mid AA\tran =\Id\} {}$ is matrices of the form $\begin{pmatrix}\cos\phi &\mp\sin\phi\\ \sin\phi& \pm\cos\phi\end{pmatrix}$ is a disjoint union of two circles.
+${} \O(2) = \{\text{2x2 matrices }A \mid AA\tran =\Id\} {}$ is matrices of the form $\begin{pmatrix}\cos\phi &\mp\sin\phi\\ \sin\phi& \pm\cos\phi\end{pmatrix}$ is a disjoint union of two circles.
 
-${} \sl(2,\mathbb{R}) = \left\{A=\begin{pmatrix}a&b\\ c&d\end{pmatrix} \Biggm| \det A = ad-bc = 1\right\} {}$ is a second order hypersurface in $\mathbb{R}^4$.
+${} \SL(2,\mathbb{R}) = \left\{A=\begin{pmatrix}a&b\\ c&d\end{pmatrix} \Biggm| \det A = ad-bc = 1\right\} {}$ is a second order hypersurface in $\mathbb{R}^4$.
 
 Proposition:
-$\sl(2,\mathbb{R})$ is three-dimensional and diffeomorphic to $S^1\times\mathbb{R}^2$.
+$\SL(2,\mathbb{R})$ is three-dimensional and diffeomorphic to $S^1\times\mathbb{R}^2$.
 
 Proof Sketch:
 Change variables to $a=x+y,\ d=x-y,\ b=u+v,\ c=u-v$ so that $ad-bc=x^2-y^2-u^2+v^2=1$. If $(y,u)\in\mathbb{R}^2$, then $(x,v)$ is in a circle of radius defined by the equation. Remains to check that the fibre bundle is trivial.
 
-${} \u(2)=\left\{A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\Biggm| a,b,c,d\in \mathbb{C},\ AA^\dagger=\Id \right\} {}$.
+${} \U(2)=\left\{A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\Biggm| a,b,c,d\in \mathbb{C},\ AA^\dagger=\Id \right\} {}$.
 
 Proposition:
-$\su(2)$ is three-dimensional and diffeomorphic to $S^3$. $\u(2)$ is four-dimensional and diffeomorphic to $S^3\times S^1$.
+$\SU(2)$ is three-dimensional and diffeomorphic to $S^3$. $\U(2)$ is four-dimensional and diffeomorphic to $S^3\times S^1$.
 
 Proof Sketch:
-We get three equations, $a\bar{a}+b\bar{b}=1$, $c\bar{a}+d\bar{b}=0$, $c\bar{c}+d\bar{d}=1$. The first gives that $(a,b)$ is in a 3-sphere of radius 1 and the next two give that $(c,d)=\lambda(-\bar{b},\bar{a})$ with $|\lambda|=1$. Note $\det A = \lambda$, so $\su(2)$ is in bijection with the 3-sphere. For $\u(2)$, the additional parameter is independent on the unit circle.
+We get three equations, $a\bar{a}+b\bar{b}=1$, $c\bar{a}+d\bar{b}=0$, $c\bar{c}+d\bar{d}=1$. The first gives that $(a,b)$ is in a 3-sphere of radius 1 and the next two give that $(c,d)=\lambda(-\bar{b},\bar{a})$ with $|\lambda|=1$. Note $\det A = \lambda$, so $\SU(2)$ is in bijection with the 3-sphere. For $\U(2)$, the additional parameter is independent on the unit circle.
 
 Abelian Lie groups:
 
@@ -44,7 +44,7 @@ Proposition:
 For $\GL(2,\mathbb{R})$, each component is diffeomorphic to $S^1\times \mathbb{R}^3$.
 
 Proof Sketch:
-Can write $A\in\GL(2,\mathbb{R})$ as $A=cA'$, where $c=\sqrt{\det A}>0$ and $A'\in\sl(2,\mathbb{R})$. Thus, $\GL^+(2,\mathbb{R})\cong\sl(2,\mathbb{R})\times\mathbb{R}^+$.
+Can write $A\in\GL(2,\mathbb{R})$ as $A=cA'$, where $c=\sqrt{\det A}>0$ and $A'\in\SL(2,\mathbb{R})$. Thus, $\GL^+(2,\mathbb{R})\cong\SL(2,\mathbb{R})\times\mathbb{R}^+$.
 
 Questions:
 
