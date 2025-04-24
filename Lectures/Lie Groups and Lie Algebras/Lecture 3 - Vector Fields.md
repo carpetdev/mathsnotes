@@ -10,14 +10,12 @@ If $\xi$ is complete, then for any $t\in \mathbb{R}$ we can define a diffeomorph
 Conclusion: vector fields on $M$ = autonomous ODE on $M$ = one-parameter groups of diffeomorphisms (if we have completeness).
 
 Example:
-
 1. $\xi=(x,y)$ on $\mathbb{R}^2$. The integral curves are $\gamma(t)=(x_0e^t, y_0e^t)$ and the diffeomorphisms $\Phi^t$ are homotheties centred at the origin with dilation factor $e^t$.
 2. $\xi_{(x,y,u,v)} = (-y,x,-v,u)$ on $S^3$. The integral curves are $(x_0\cos t-y_0\sin t, y_0\cos t+x_0\sin t, u_0\cos t-v_0\sin t, v_0\cos t + u_0\sin t)$. This is a circle of radius $1$ centred at the origin and lying in the 2-dimensional plane spanned by the vectors $P$ and $\xi(P)$. The corresponding diffeomorphism $\Phi^t$ can be understood as the composition of two rotations by angle $t$ in the $xy$ and $uv$ planes. In fact, this is an example of a left-invariant vector field on $\SU(2)$.
 
 The **Lie bracket** of vector fields is a bilinear differential operator which assigns, to any two vector fields $\xi$ and $\eta$ on a smooth manifold $M$, a new vector field denoted by $[\xi,\eta]$. In local coordinates, the components are defined by $[\xi,\eta]^k=\xi^i\frac{\partial \eta^k}{\partial x^i}-\eta^i\frac{\partial \xi^k}{\partial x^i}]$ (using summation convention). If we think of vector fields as derivations, then the bracket is defined by $[\xi,\eta](f)=\xi(\eta(f))-\eta(\xi(f))$ (note the second derivatives cancel out in this formula so it checks out).
 
 Properties of the Lie bracket:
-
 - Bilinearity over $\mathbb{R}$
 - Skew-symmetric
 - Leibniz rule: $[\xi,f\eta]=f[\xi,\eta]+\xi(f)\eta$ for any $f\in C^\infty(M)$

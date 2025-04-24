@@ -36,7 +36,6 @@ p_1(a_{11},a_{12},\dots,a_{nn})=0\\ \vdots\\ p_m(a_{11},a_{12},\dots,a_{nn})=0
 where $a_{ij}$ are matrix components of $A\in\GL(n,\mathbb{R})$. Also works for $\mathbb{C}$.
 
 Example:
-
 - $\SL(n,\mathbb{R})$ is given by $\det A = 1$
 - $\O(n)$ is given by $n(n+1)/2$ equations; $\SO(n)$ has one additional equation
 - The upper triangular group is given by $n(n-1)/2$ equations of the form $a_{ij}=0$

@@ -1,5 +1,4 @@
 Example (Manifold):
-
 - Any open subset of a vector space $\mathbb{R}^n$
 - Graph of a smooth function
 - Two-dimensional surfaces
@@ -16,7 +15,6 @@ In $\mathbb{R}^n$, consider a system of equations $$\begin{cases}f_1(x_1,\dots,x
 \end{pmatrix}$$ is maximal ($=k$) at any point $P\in M$, then $M$ carries the natural structure of a smooth manifold of dimension $n-k$.
 
 Example:
-
 - Consider the group $\O(3)\subseteq\mathbb{R}^9$. The condition ${} AA\tran=\Id {}$ is a matrix equation which is equivalent to the system of 6 independent usual equations with 9 unknowns (these conditions are that the rows of $A$ are an orthonormal basis in $\mathbb{R}^3$). Thus, we have a 3 dimensional manifold.
 - Consider the surface $V$, a cone, in $\mathbb{R}^3$ given by $x^2+y^2-z^2=0$. The differential $df=(2x,2y,-2z)$ is nowhere zero except at the origin. So we get that $V\setminus\{(0,0,0)\}$ is a surface.
 

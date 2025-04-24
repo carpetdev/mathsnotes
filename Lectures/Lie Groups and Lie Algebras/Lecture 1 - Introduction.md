@@ -31,7 +31,6 @@ Proof Sketch:
 We get three equations, $a\bar{a}+b\bar{b}=1$, $c\bar{a}+d\bar{b}=0$, $c\bar{c}+d\bar{d}=1$. The first gives that $(a,b)$ is in a 3-sphere of radius 1 and the next two give that $(c,d)=\lambda(-\bar{b},\bar{a})$ with $|\lambda|=1$. Note $\det A = \lambda$, so $\SU(2)$ is in bijection with the 3-sphere. For $\U(2)$, the additional parameter is independent on the unit circle.
 
 Abelian Lie groups:
-
 - Any (finite-dimensional) vector space $V$ over $\mathbb{R}$ carries a natural structure of an abelian Lie group.
 - A torus $T^n=S^1\times\dots\times S^1$ is also an abelian Lie group. We can also represent this a a matrix Lie group given by $(\phi_1,\dots,\phi_n)\mapsto \operatorname{diag}(e^{i\phi_1},\dots,e^{i\phi_n})$.
   Actually, the above (and products of them) are the only connected abelian Lie groups.
@@ -47,7 +46,6 @@ Proof Sketch:
 Can write $A\in\GL(2,\mathbb{R})$ as $A=cA'$, where $c=\sqrt{\det A}>0$ and $A'\in\SL(2,\mathbb{R})$. Thus, $\GL^+(2,\mathbb{R})\cong\SL(2,\mathbb{R})\times\mathbb{R}^+$.
 
 Questions:
-
 1. What topological properties do matrix Lie groups have (dimension, compactness, connectedness, etc.)?
 2. What are topological obstructions for a manifold to carry the structure of a Lie group?
 3. What differential geometry can we do (left- and right-invariant vector fields, one-parameter subgroups, exponential map)?
