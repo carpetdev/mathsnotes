@@ -4,7 +4,6 @@
   "trashOption": "system",
   "defaultViewMode": "source",
   "strictLineBreaks": false,
-  "showRibbon": false,
   "useTab": false,
   "vimMode": true,
   "readableLineLength": false,

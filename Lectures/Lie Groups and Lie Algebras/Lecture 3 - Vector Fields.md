@@ -34,7 +34,12 @@ Let $F\colon M\to N$ be a smooth map, $P\in M$ and $Q=F(P)\in N$. The **differen
 
 A smooth map $F\colon M\to N$ is called an **immersion** if its differential $dF\colon T_PM\to T_{F(P)}N$ is a monomorphism for any $P\in M$, **submersion** if ${} dF {}$ is an epimorphism for any $P\in M$, **embedding** if an immersion and $M$ is homeomorphic to its image. If $dF$ is an isomorphism at each point then we obtain a local diffeomorphism between some neighbourhoods of $P$ and $F(P)$. If in addition there is a neighbourhood of each point in the codomain such that its preimage is a disjoint union of diffeomorphic neighbourhoods, then $F$ is called a **covering**.
 
-Example: - Smooth regular curve $\gamma\colon \mathbb{R}\to \mathbb{R}^2$ with self-intersections is an immersion - Consider $T^2$ with angle coordinates. Then $F\colon \mathbb{R}\to T^2$ given by $F(t)=(at,bt)$ for $(a,b)\neq (0,0)$ is an immersion. If $a/b\in\mathbb{Q}$, then the image is a closed curve, else it is an irrational winding. - $F\colon \O(3)\to S^2,\ A\mapsto(a_{11},a_{12},a_{13})$ is a submersion - Any smooth homomorphism of Lie groups is either an immersion or a submersion. If its differential is a linear isomorphism, then it is a covering. - The orthogonal projection $p\colon S^2\to \mathbb{R}^2=Oxy$ is neither an immersion or a submersion - $F\colon \mathbb{R}\to S^1, x\mapsto e^{ix}$ is a covering - $\left. F \right|_{(-2\pi,2\pi)}$ with $F$ as above is not a covering but still a submersion and immersion
+Example:
+- Smooth regular curve $\gamma\colon \mathbb{R}\to \mathbb{R}^2$ with self-intersections is an immersion
+- Consider $T^2$ with angle coordinates. Then $F\colon \mathbb{R}\to T^2$ given by $F(t)=(at,bt)$ for $(a,b)\neq (0,0)$ is an immersion. If $a/b\in\mathbb{Q}$, then the image is a closed curve, else it is an irrational winding. - $F\colon \O(3)\to S^2,\ A\mapsto(a_{11},a_{12},a_{13})$ is a submersion - Any smooth homomorphism of Lie groups is either an immersion or a submersion. If its differential is a linear isomorphism, then it is a covering.
+- The orthogonal projection $p\colon S^2\to \mathbb{R}^2=Oxy$ is neither an immersion or a submersion
+- $F\colon \mathbb{R}\to S^1, x\mapsto e^{ix}$ is a covering
+- $\left. F \right|_{(-2\pi,2\pi)}$ with $F$ as above is not a covering but still a submersion and immersion
 
 A subset $N\subseteq M$ is a **submanifold** if $N$ is a smooth manifold and the natural inclusion $p\colon N\hookrightarrow M$ is an embedding. Equivalently, it can locally be given by a system of equations satisfying the regularity condition (rank of Jacobi matrix is full). So we can always choose local coordinates $z_1,\dots,z_m$ in $M$ such that $N$ is locally given by $z_{k+1}=\dots=z_m=0$ if $N$ is $k$-dimensional.
 
