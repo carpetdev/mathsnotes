@@ -8,6 +8,7 @@
     {trigger: /(${morphism_prefix})c/i, replacement: "[[0]]morphic", options: "tA"},
     {trigger: /(n)bhd/i, replacement: "[[0]]eighbourhood", options: "tA"},
     {trigger: /(m)fd/i, replacement: "[[0]]anifold", options: "tA"},
+    {trigger: /(r)epn/i, replacement: "[[0]]epresentation", options: "tA"},
 
     // Obsidian
     {trigger: /(![a-z]+)/, replacement: ">[[[0]]]", options: "t"},
@@ -48,6 +49,7 @@
     {trigger: "@S", replacement: "\\Sigma", options: "mA"},
     {trigger: "@u", replacement: "\\upsilon", options: "mA"},
     {trigger: "@U", replacement: "\\Upsilon", options: "mA"},
+    {trigger: "@w", replacement: "\\omega", options: "mA"},
     {trigger: "@o", replacement: "\\omega", options: "mA"},
     {trigger: "@O", replacement: "\\Omega", options: "mA"},
     {trigger: ":p", replacement: "\\varphi", options: "mA"},
@@ -66,12 +68,12 @@
     {trigger: "invs", replacement: "^{-1}", options: "mA"},
 
     // More operations
-    {trigger: "([a-zA-Z])hat", replacement: "\\hat{[[0]]}", options: "rmA"},
+    {trigger: "((?!e)[a-zA-Z])hat", replacement: "\\hat{[[0]]}", options: "rmA"},
     {trigger: "([a-zA-Z])bar", replacement: "\\bar{[[0]]}", options: "rm"},
     {trigger: "((?!c)[a-zA-Z])dot", replacement: "\\dot{[[0]]}", options: "rm", priority: -1},
     {trigger: "([a-zA-Z])ddot", replacement: "\\ddot{[[0]]}", options: "rm", priority: 1},
-    {trigger: "([a-z])tilde", replacement: "\\tilde{[[0]]}", options: "rm"},
-    {trigger: "([A-Z])tilde", replacement: "\\widetilde{[[0]]}", options: "rm"},
+    {trigger: "([a-z])tilde", replacement: "\\tilde{[[0]]}", options: "rmA"},
+    {trigger: "([A-Z])tilde", replacement: "\\widetilde{[[0]]}", options: "rmA"},
     {trigger: "([a-zA-Z])und", replacement: "\\underline{[[0]]}", options: "rm"},
     {trigger: "([a-zA-Z])vec", replacement: "\\vec{[[0]]}", options: "rm"},
 
@@ -82,6 +84,7 @@
     {trigger: /\\hat{([A-Za-z])}(\d)/, replacement: "\\hat{[[0]]}_[[1]]", options: "rmA"},
     {trigger: /\\vec{([A-Za-z])}(\d)/, replacement: "\\vec{[[0]]}_[[1]]", options: "rmA"},
     {trigger: /\\mathbf{([A-Za-z])}(\d)/, replacement: "\\mathbf{[[0]]}_[[1]]", options: "rmA"},
+    {trigger: /(\\mathfrak{g})\^\^/, replacement: "[[0]]^{($1)}$2", options: "rmA"},
 
     {trigger: "\phit", replacement: "\phi^t", options: "mA"},
     {trigger: "xnn", replacement: "x_n", options: "mA"},
@@ -110,6 +113,7 @@
     {trigger: "sim=", replacement: "\\simeq", options: "mA"},
 
     // Arrows
+    {trigger: "curvera", replacement: "\\curvearrowright", options: "mA"},
     {trigger: "leftra", replacement: "\\leftrightarrow", options: "mA"},
     {trigger: "leftla", replacement: "\\leftleftarrows", options: "mA"},
     {trigger: "rightra", replacement: "\\rightrightarrows", options: "mA"},
@@ -146,9 +150,10 @@
     {trigger: "LL", replacement: "\\mathcal{L}", options: "mA"},
     {trigger: "HH", replacement: "\\mathcal{H}", options: "mA"},
     {trigger: "CC", replacement: "\\mathbb{C}", options: "mA"},
+    {trigger: "OO", replacement: "\\mathcal{O}", options: "mA"},
     {trigger: "RR", replacement: "\\mathbb{R}", options: "mA"},
     {trigger: "II", replacement: "[0,1]", options: "mA"},
-    {trigger: /([gh]){2}/, replacement: "\\mathfrak{[[0]]}", options: "mA"},
+    {trigger: /([gh])\1/, replacement: "\\mathfrak{[[0]]}", options: "mA"},
     {trigger: /\\mathbb{R}([\da-z])/i, replacement: "\\mathbb{R}^[[0]]", options: "mA"},
     {trigger: /(?<!\\)S([\da-z])/, replacement: "S^[[0]]", options: "mA"},
     {trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},

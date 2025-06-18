@@ -24,7 +24,9 @@
 
 % Linear Algebra
 \DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\St}{St}
 \DeclareMathOperator{\Diff}{Diff}
+\DeclareMathOperator{\Vect}{Vect}
 \DeclareMathOperator{\GL}{GL}
 \DeclareMathOperator{\gl}{\mathfrak{gl}}
 \DeclareMathOperator{\SL}{SL}
@@ -34,8 +36,10 @@
 \DeclareMathOperator{\so}{\mathfrak{so}}
 \DeclareMathOperator{\U}{U}
 \DeclareMathOperator{\SU}{SU}
+\DeclareMathOperator{\su}{\mathfrak{su}}
 \DeclareMathOperator{\lin}{Lin}
 \DeclareMathOperator{\Ad}{Ad}
+\DeclareMathOperator{\ad}{ad}
 \DeclareMathOperator{\tr}{tr}
 \newcommand{\tran}{^\top}
 \newcommand{\id}{\mathrm{id}}

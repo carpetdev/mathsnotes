@@ -4,7 +4,6 @@
   "trashOption": "system",
   "defaultViewMode": "source",
   "strictLineBreaks": false,
-  "showRibbon": false,
   "useTab": false,
   "vimMode": true,
   "readableLineLength": false,
@@ -13,5 +12,5 @@
   "showIndentGuide": false,
   "showUnsupportedFiles": false,
   "showInlineTitle": true,
-  "newFileLocation": "root"
+  "newFileLocation": "current"
 }

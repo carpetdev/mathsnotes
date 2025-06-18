@@ -14,5 +14,6 @@
   "accentColor": "#e3008c",
   "nativeMenus": false,
   "showViewHeader": false,
-  "cssTheme": "Minimal"
+  "cssTheme": "Minimal",
+  "showRibbon": false
 }
