@@ -1,0 +1,3 @@
+- https://arxiv.org/abs/1807.09551
+- https://arxiv.org/abs/1309.4070
+- On the theory of identical particles - Leinaas

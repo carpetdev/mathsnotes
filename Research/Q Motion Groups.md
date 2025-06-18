@@ -1,0 +1,18 @@
+- Continuous functions from $\mathbb{Q}$ to $\mathbb{R}$ can always be extended with upper limit (and replace infinities) but this may not be continuous. If it is then this is unique? 
+    - https://mathoverflow.net/questions/394565/extending-continuous-functions-from-mathbb-q-to-mathbb-r
+    - Sequential continuity is what it means for the extension to be continuous?
+        - https://math.stackexchange.com/questions/2373592/does-every-continuous-map-from-mathbbq-to-mathbbq-extends-continuously
+    - https://math.stackexchange.com/questions/76854/extending-a-function-by-continuity-from-a-dense-subset-of-a-space
+    - https://math.stackexchange.com/questions/245237/extension-of-a-uniformly-continuous-function-between-metric-spaces
+- Continuous image of dense set is dense
+    - https://math.stackexchange.com/questions/784949/is-continuous-image-of-dense-set-dense
+- Isotopy extension
+    - https://mathoverflow.net/questions/145636/isotopy-extension-theorems
+- Motions of links
+    - https://pi.math.cornell.edu/~hatcher/Papers/wickets.pdf
+    - https://www.jstor.org/stable/24491407
+    - https://arxiv.org/abs/2002.07642
+    - https://arxiv.org/abs/2504.21806
+    - https://www.sciencedirect.com/science/article/pii/S0166864119301701
+- Budney
+    - https://mathoverflow.net/questions/21742/knot-complement-diffeomorphism-groups-and-embedding-spaces

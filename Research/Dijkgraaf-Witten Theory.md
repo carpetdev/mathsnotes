@@ -1,0 +1,2 @@
+- https://projecteuclid.org/journals/advances-in-theoretical-and-mathematical-physics/volume-16/issue-1/Equivariant-modular-categories-via-DijkgraafWitten-theory/atmp/1358950855.full
+- https://arxiv.org/abs/1509.06811

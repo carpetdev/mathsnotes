@@ -1,0 +1,30 @@
+- $x^{-1}$ is inverse for additive group $\cdot$ and $\bar{x}$ is inverse for multipliative group ${} \circ {}$
+- $(G,\cdot)$ is a group if and only if ${} \lambda_\cdot(G) {}$ is a regular subgroup of $\operatorname{Perm}(G)$, where ${} \lambda_\cdot(x)[y] = x\cdot y {}$ is the left regular representation
+- $(G,\cdot,\circ)$ is a skew brace if and only if ${} \lambda_\circ(G) {}$ is a regular subgroup of the holomorph of $(G,\cdot)$, i.e. $\operatorname{Hol}(G,\cdot) = \operatorname{Norm}_{\operatorname{Perm}(G)}(\lambda_\cdot(G)) \subseteq \operatorname{Perm}(G)$
+    - $\operatorname{Hol}(G,\cdot) = \lambda_\cdot(G)\operatorname{Aut}(G,\cdot)$ as a semidirect product
+- If $(G,\cdot,\circ)$ is a skew brace, then for each $x\in G$ we have ${} \lambda_\circ(x)=\lambda_\cdot(g_x)\gamma_x {}$ for some $g_x\in G$ and $\gamma_x\in \operatorname{Aut}(G,\cdot)$
+    - It turns out that $g_x=x$, so $\gamma_x[y] = \lambda_\cdot(x)^{-1}\lambda_\circ(x)[y] = x^{-1}(x\circ y)$
+- $\gamma\colon (G,\circ)\to \operatorname{Aut}(G,\cdot)$ is a homomorphism
+    - An additive subgroup of a skew brace is a left ideal if $\gamma_G(H)=H$, which imples that it is also a multiplicative subgroup
+    - A left ideal is an ideal if it is normal in additive and multiplicative groups. Can quotient by these
+- A biskew brace is a skew brace $(G,\cdot,\circ)$ such that $(G,\circ,\cdot)$ is also a skew brace
+    - Example for all of the above is $D_{2n}$ with normal multiplication and naive multiplication (just add powers of the same generator). Also $(G,\cdot,\cdot)$ and $(G,\cdot,\cdot\op)$ for all groups
+- A skew brace is a biskew brace if and only if $\lambda_\cdot(G)\subseteq\operatorname{Hol}(G,\circ)$ is a regular subgroup 
+- For a biskew brace, the gamma function of $(G,\circ,\cdot)$ is given by $\gamma'_x(y) = \bar{x}\circ(xy)$
+    - We find that $\gamma_x'(\gamma_x(y)) = y$ and that $\gamma_x'=\gamma_x^{-1}$ which implies the following:
+    - For a biskew brace, the (left) ideals of $(G,\cdot,\circ)$ and $(G,\circ,\cdot)$ coincide
+- There is a natural notion of solubility for skew braces
+    - Proposition: A biskew brace is soluble if and only if $\gamma(G)\subseteq\operatorname{Aut}(G,\cdot)$ is a soluble group
+    - Conjecture: For a skew brace, if $(G,\cdot)$ is soluble then $(G,\circ)$ is soluble
+    - Theorem: For a biskew brace, $(G,\cdot)$ is soluble if and only if $(G,\circ)$ is soluble
+- An abelian map on a group is an endomorphism with abelian image, equivalently. $\psi(yxy^{-1}) = \psi(x)$ (abelian map magic)
+    - Theorem: $x\circ y = x\psi(x)^{-1}y\psi(x)$ gives a biskew brace
+        - Note the abelian map is on the additive group
+    - Abelian map $\psi(r^is^j) = s^j$ in $D_{2n}$ recovers the standard example
+- For abelian map $\psi$, the map $\phi(x) = x\psi(x)^{-1}$ is a homomorphism from $(G,\circ)$ into $(G,\cdot)$
+    - We have $\ker(\phi) = \operatorname{Fix}(\psi)$
+    - If $\psi$ is fixed-point-free, then $(G,\circ)\cong(G,\cdot)$
+- Open questions:
+    - If a biskew brace arises from an abelian map, do we have the groups are isomorphic if and only $\psi$ is "equivalent" to a fixed-point-free abelian map?
+    - If a biskew brace arises from an abelian map, how do we determine the isomorphism class of $(G,\circ)$ in general?
+        - Given a biskew brace, how can we detect whether $\circ$ "comes from" an abelian map?

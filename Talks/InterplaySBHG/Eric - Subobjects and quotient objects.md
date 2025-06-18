@@ -1,0 +1,9 @@
+- $\cat{C}$ is a (strict) (braided) monoidal category. $\operatorname{YB}(\cat{C})$ is the category of YB objects $(X,\gamma)$ in $\cat{C}$ where $\gamma_{X,X}$ is a braiding on $X$. Morphisms intertwine the braidings
+- Restrict now to $\mathbf{Mat}$. Monos and epis are full rank matrices (mono or epi depending on size of source and target)
+- Subobjects of $(N,R)$ are equivalence classes $[Q,M,S]$ such that $Q\colon (M,S)\to (N,R)$ is a mono and equivalence is if there is an isomorphism $(M,S')\ar{A}(M,S)$ such that $Q'A=Q$
+    - Quotient objects are same for epis and reverse arrows
+- $(N,R)$ is simple if no sub or quotient objects
+- For $M=1$, a sub/quotient object corresponds to a left/right eigenvector of the form $v\otimes v$
+- Simple $\implies$ indecomposable
+- Theorem: Let $A\in \End(N,R)$ have rank $M$. Take $Q$ to be $N\times M$ with column space the same as $A$ and $P=Q^* A$ where $Q^*Q=\Id$. Set $S=(Q^*\otimes Q^*)R(Q\otimes Q)$. Then $[Q,M,S]$ is sub and $[M,S,P]$ is quotient, so $(M,S)$ "is" a sub and quotient object.
+    - Converse also true (can build an $A$ from this data)
