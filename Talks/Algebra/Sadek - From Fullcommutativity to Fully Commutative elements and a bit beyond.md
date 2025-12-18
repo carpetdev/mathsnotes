@@ -1,0 +1,4 @@
+- Generators of Von Neumann algebra given by Dyck paths
+- (Stembridge 1997) Elements for which one can pass from any reduced expression to any other one **only** by applying commutation relations are called *fully commutative elements*. We denote by $W^c(\Gamma)$ the set of fully commutative elements in $W=W(\Gamma)$
+    - rigid elements (only one reduced expression) are fully commutative
+    - elements consisting of only pairwise commuting generators are fully commutative

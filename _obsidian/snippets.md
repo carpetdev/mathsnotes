@@ -19,7 +19,7 @@
     {trigger: "tikzadj", replacement: "```tikz\n\\usepackage{tikz-cd, amsmath, amssymb}\\begin{document}\\begin{tikzcd}[every label/.append style={font=\\small}]\n${0:\\mathcal{C}}\\rar[phantom, \"${1:\\bot}\"]\\rar[shift right=3, \"${2:R}\"'] & ${3:\\mathcal{D}}\\lar[shift right=3, \"${4:L}\"']\n\\end{tikzcd}\\end{document}\n```", options: "tA"},
 
     // Commands
-    {trigger: "dmo", replacement: "\\DeclareMathOperator{$0}", options: "m"},
+    {trigger: "dmo", replacement: "\\DeclareMathOperator{$0}{$1}", options: "m"},
 
     // Math mode
     {trigger: "MK", replacement: "$$$0$$$1", options: "tA"},

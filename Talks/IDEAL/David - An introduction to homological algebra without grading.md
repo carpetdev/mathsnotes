@@ -1,0 +1,2 @@
+- Differential $A$-module $M$ is a module with a square 0 endomorphism $d_M$
+- Can $\cat{Dif}(A)$ detect if a module has finite injective dimension?

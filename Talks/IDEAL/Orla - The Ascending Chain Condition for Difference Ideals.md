@@ -1,0 +1,3 @@
+- $\sigma$-ring is a ring $R$ with a set $\sigma$ containing a finite number of pairwise commuting endomorphisms
+- $\sigma$-ideal is an ideal which is closed under each endomorphism
+- $\sigma$-ring homomorphism is a homomorphism which commutes with each endomorphism

@@ -1,0 +1,4 @@
+- Holder continuity tells you how pointy something is
+- Schauder estimate gives a bound on solution to elliptic PDE given some assumptions
+- Can use existence of Laplace solution to give existence for Holder elliptic PDE solution (in $c$ negative case). Uniqueness is clear
+- Fredholm alternative gives result for all $c$

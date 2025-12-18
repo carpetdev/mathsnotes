@@ -1,0 +1,1 @@
+- Can translate over to graphs and then solve with graph properties
