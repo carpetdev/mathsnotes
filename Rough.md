@@ -5,3 +5,13 @@ An inverse semigroup is a set $S$ with an associative binary operation such that
 Proposition: Let $S$ be an inverse semigroup. The set of idempotents $E(S) = \{e\in S \mid ee=e\}$ is a commutative inverse (sub)semigroup.
 
 Corollary: Let $S$ be an inverse semigroup and $x,y\in S$. Then $(xy)^{-1}=y^{-1}x^{-1}$.
+
+or take $\tr\mathcal{T}^N$
+
+- $\{+,-\}\to\set{1,\dots,q}$ (giving the $q$-state Potts model)
+    - action of $D_{2N}\times S_q$
+- more interesting $\widetilde{H}$ (especially for $q\geq 3$)
+- square $\to$ triangular/hexagonal etc.
+- 2 dimensions $\to n$ dimensions
+
+${} (2^{100} = 1267650600228229401496703205376) {}$
