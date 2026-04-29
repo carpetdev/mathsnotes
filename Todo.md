@@ -8,6 +8,10 @@
     - Curtis Reiner - characters
     - Magnus Karas Solitar - coxeter groups
     - Peyen Bogachev Martin - algebraic combinatorics/probability
+    - TQFT notes? Jack Romo told me about them... was it Schweigert?
+- Talks
+    - Some quantum computing one George told me about
+    - Algebra I missed from Davide
 
 ```query
 tag:#todo
