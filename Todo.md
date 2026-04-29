@@ -1,5 +1,7 @@
 - Miscellaneous
-    - Recap interesting talks from Artin@Leeds and ITMAIA (also file away pdf abstracts and exercises) - Eric had an exercise. Also BECMC
+    - Recap interesting talks from Artin@Leeds and ITMAIA (also file away pdf abstracts and exercises) - Eric had an exercise. Also BECMC. Interplay1 had Jack's talk - do all little workshops and stuff, Pure PGRs
+    - I had some question on steiner symmetrisation (from Kasia's colloquium)?
+    - Have paper notes to type up/photo
     - Import pictures from Joao meeting, Sadek talk, Eric talk (above)
     - Reorganise this file
     - Organise what MAGIC exercises want more thinking about (here maybe?)

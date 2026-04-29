@@ -1,0 +1,10 @@
+- Given a knot and a finite group $G$, $I_G(K)$ is the number of homomorphisms from knot group to $G$.
+- Let $\mathbb{C}(G//_{ad}\ G)$ be the groupoid for the action of $G$ on itself by conjugation
+- ${} E_G(K) = \sum_{f\in\hom(\pi_1(\mathbb{R}^3\setminus K), G)} f(m)\ar{f(l)}f(m) {}$ ($m$, $l$ are meridian and longitude)
+- Welded knot diagram is an immersion $D\colon S^1\to \mathbb{R}^2$
+- $Tube\colon \set{\text{welded knot diagrams}}/\text{welded moves}\to \set{\text{Ribbon knotted tori }T\colon S^1\times S^1\to\mathbb{R}^4}$
+- Lemma: $\pi_1(\mathbb{R}^3\setminus Tube(D))\cong \langle \text{arcs} \mid \text{crossings} \rangle$ (undercrossing of $x$ under $y$ becomes $y^{-1}xy$, welded crossings do nothing)
+    - Tubular neighbourhood gives extra circle (to $m$ and $l$) which is null-homotopic on its own
+- Lemma: $\pi_1(\cat{Top}(S^1,X), C(*)) \cong \pi_1(X,*)\ltimes \pi_2(X,*)$
+- Have ($\pi_1,\pi_2,\rhd$)
+    - The fundamental $\pi$-module is $(W(D)\cong\pi_1(\mathbb{R}^4\setminus Tube(D)), \mathbb{Z}[W(D)]\{\text{arcs}\}/\text{crossings}, \rhd)$

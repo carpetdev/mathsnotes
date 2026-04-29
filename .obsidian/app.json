@@ -6,12 +6,13 @@
   "defaultViewMode": "source",
   "strictLineBreaks": false,
   "useTab": false,
-  "vimMode": true,
+  "vimMode": false,
   "readableLineLength": false,
   "spellcheck": false,
   "showLineNumber": false,
   "showIndentGuide": false,
   "showUnsupportedFiles": false,
   "showInlineTitle": true,
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "autoPairBrackets": false
 }

@@ -1,0 +1,28 @@
+- Modular tensor categories taxonomise anyons. Modular data numerically computable
+- Fusion category over $\mathbb{C}$ is a finite semisimple tensor category with $\End(1)=\mathbb{C}$ (e.g. $\cat{Rep}(G), \cat{Vec}_G$)
+- A braiding on a fusion category is a choice of natural isomorphisms $\set{c_{X,Y}\colon X\otimes Y \ar{\sim}\to Y\otimes X}_{X,Y\in\cat{C}}$
+    - E.g. $\cat{Rep}(G)$, $\cat{Vec}_G$ if $G$ abelian. $\cat{Rep}(G,Z)$, $z\in Z(G)$, $z^2=1$, have a sign arising from action of $z$
+- $\cat{D} \subseteq \cat{C}$, $\cat{D}' = \set{Y \mid c_{Y,X}\circ c_{X,Y} = \id\ \forall X \in \cat{D}}$ Mugen centraliser of $\cat{D}$ in $\cat{C}$.
+- When $\cat{C}' = \cat{Vec}$, $\cat{C}$ is non-degenerate.
+- Twist is $\Theta_X\colon X\ar{\sim}X$ s.t. $\Theta_{X\otimes Y} = (\Theta_X \otimes \Theta_Y)c_{X,Y}c_{Y,X}$
+- Ribbon if $\Theta_{X^*}=(\Theta_X)^*$
+- $f\colon X\to X$, $\Tr(f) = \mathbb{1}\to X\otimes X^* \to X\otimes X^* \to X^*\otimes X\to \mathbb{1}$ (can't read the maps)
+- Modular data: Given RFC $\cat{C}$, $S_{X,Y} = [\Tr(c_{Y,X}\circ c_{X,Y})]_{X,Y \text{ simple}}$, $T_X,X = \Theta_X \Id_{n\times n}$
+    - This is classified up to rank 12
+- $(A,q)$ is a pre-metric group if $A$ finite abelian group and $q\colon A\to C^\times$ with $q(a)=q(-a)$. $b(a,c) = q(a+c)/q(a)q(c)$ is the bicharacter
+- $\cat{C}(A,q)$ abelian cat is $\cat{Vec}_A$. $\Theta_a=q(a)$, $H^3_\text{ab}(A,k^\times) \ar{\sim} \cat{Quad}(A)$. Modular data: $S_{a,b} = b(a,c)$ ($b(a,c)$ is non degenerate)
+- Modular category is a RFC $\cat{C}$ s.t. $S_{X,Y}$ is non-degenerate $\iff$ $\cat{C}$ is nondegenerate as a BFC
+- Need to product new MTCs from old: zesting
+# Condensed Fibre Product
+- $A$ Algebra in $\cat{C}$, $m$ multiplication, $u$ unit.
+- Deligne tensor product: $\cat{C}\boxtimes \cat{D}$ has objects sums of $X\boxtimes Y$ and morphisms tensor product of Hom spaces.
+- $B_z=\cat{C}(\widetilde{B},q_z)$ ($z^2 =1$) where $q_z(\phi) = \phi(z)$. Let $\\C$ be a non-degenerate BFC containing $B_z$ which is $B$-graded. $\cat{C}_b = \left< X : c_{X,\phi} c_{\phi,X}=\phi(b)\id\ \forall \phi\in \widetilde{B} \right>$
+    - Note $B_Z\subseteq (\cat{C}_0)' \cap \cat{C}_0$
+- Define $\cat{T}^\text{nd}(B,B_z)$ the 2-cat of BFCs with the $B$-grading determined by $B_z \subseteq \cat{C}$.
+- The condensed fibre product of $\cat{C}, \cat{D} \in T^\text{nd}(B,B_z)$ is $C\boxtimes^{B} D \cong \bigoplus_{b\in B} \cat{C}_b\boxtimes \cat{D}_b$
+    - $\left[\cat{C}\boxtimes^B \cat{D}\right]_0 \supseteq \left< \phi\otimes \phi^{-1} \right> \cong \cat{Rep}(B)$ 
+- $\operatorname{Fun}(B) = \bigoplus_{\phi\in B_z \text{ simple}} \phi\boxtimes \phi^{-1}$ the regular aglebra of functions on $B$.
+- $\widetilde{F} = \left[ \cat{C}\boxtimes^B \cat{D} \right]_B$ category of modules over $\operatorname{Fun}(B)$ in $\cat{C}\boxtimes^B\cat{D}$
+- Thm: If $C,D\in \cat{T}^\text{nd}(B,B_z)$, then $\left[ \cat{C}\boxtimes^B D \right]_B \in \cat{T}^\text{nd}(B,B_z)$
+    - Thm: If also $D_0 \cong B_z$ then $\left[ \cat{C}\boxtimes^B D \right]_B$ is a braided zesting of $\cat{C}$
+- Corollary: CFP is monoidal structure on $\cat{T}^\text{nd}(B,B_z)$ with unit $Z(B,z)$

@@ -1,0 +1,24 @@
+uantum computers have problem that they're sensitive to errors
+- TQC use non-local degrees of freedom of anyonic fusion
+- Anyons are quasiparticle excitations in 2d systems with topological order
+    - Exotic exchange
+- Anyon models built using unitary modular tensor categories
+    - Simple objects correspond to anyon species
+    - Tensor product is fusion of anyons
+- We can act on anyons by braiding (computation)
+    - Measure by fusing anyons back together again
+- R and F give braid group representation
+    - R move is braided a and b becoming c ($R^{ab}_c$)
+    - F move fuses a and b then fuses output with c becoming d (or equivalently a with b and c by associativity)
+- Quantum double models $D(G)$ (finite group $G$ dictates anyons and their braiding)
+    - Anyon types 1:1 correspond with irreps of $D(G)$
+- $D(S_3)$ has conjugacy classes $C_1=\{e\}$, $C_2=\{t,tc,tc^2\} {}$, $C_3=\{c,c^2\}$ and respective centralisers $S_3, Z_2, Z_3$ with respective irreps $(1,-1,2)$, $(1,-1)$, $(1,\omega,\bar{\omega})$ for $\omega=e^{2\pi i/3}$.
+- Just consider $1 = A$, $-1 = B$ and $\omega = G$
+    - Then $A\times A = A$, $B\times B = A$, $B\times G = G$ and $G\times G = A+B+G$ (as $G$ is non-abelian)
+- We'll look at fusion space $H=\hom(G,G\times G \times G)$
+- ![[Lucy 1.png]]
+- Get $b_1$ with $R^{GG}$, $b_2$ with $F^{-1}RF$
+- R and F obey pentagon and hexagon rules
+- $R^{GG} = \operatorname{diag(\bar{\omega},\bar{\omega},\omega)}$
+- $F^G_{GGG} = \frac{1}{2}\begin{pmatrix}1& 1 & \sqrt{2}\\1& 1& -\sqrt{2}\\ \sqrt{2}&\sqrt{2}& 0\end{pmatrix}$
+- ![[Lucy 2.png]]

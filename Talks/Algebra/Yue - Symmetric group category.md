@@ -1,0 +1,2 @@
+- In a strict monoidal category, a **monoidal prime** is a morphism which can't be made from the monoidal product of other morphisms
+    - Numbers are 1, 1, 3, 13, 71, 461 (A003319 on OEIS)

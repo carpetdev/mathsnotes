@@ -156,6 +156,13 @@
       ],
       "tokenMatcher": "Document",
       "jumpAfter": true
+    },
+    {
+      "lookups": [
+        ")"
+      ],
+      "tokenMatcher": "list-2",
+      "jumpAfter": true
     }
   ]
 }
