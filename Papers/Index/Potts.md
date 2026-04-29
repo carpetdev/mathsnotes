@@ -1,0 +1,5 @@
+[[Folk - Ising's Roots.pdf]]
+[[Moler - 19 Dubious Ways.pdf]]
+[[Kim - Ising Model.pdf]]
+[[Ambjørn - Complex Zeros.pdf]]
+[[Knuth - 2 Notes on Notation.pdf]]

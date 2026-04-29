@@ -1,6 +1,7 @@
 {
+  "showRibbon": false,
   "promptDelete": false,
-  "alwaysUpdateLinks": false,
+  "alwaysUpdateLinks": true,
   "trashOption": "system",
   "defaultViewMode": "source",
   "strictLineBreaks": false,

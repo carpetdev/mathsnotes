@@ -28,3 +28,6 @@
              - Potts model
  - [[Characters]]
      - Adjoints between magma -> group hierarchy
+ - Other
+     - What sets have finitely many steiner symmetrisations into the ball
+         - https://www.weizmann.ac.il/math/klartag/sites/math.klartag/files/uploads/rapid_symm.pdf
